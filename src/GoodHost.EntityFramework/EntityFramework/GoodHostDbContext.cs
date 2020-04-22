@@ -32,7 +32,7 @@ namespace GoodHost.EntityFramework
         {
 
         }
-
+        
         //This constructor is used in tests
         public GoodHostDbContext(DbConnection existingConnection)
          : base(existingConnection, false)

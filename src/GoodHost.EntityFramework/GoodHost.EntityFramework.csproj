@@ -273,9 +273,9 @@
     <Compile Include="Migrations\202003201250482_Ugraded_To_ABP_5_4_0.designer.cs">
       <DependentUpon>202003201250482_Ugraded_To_ABP_5_4_0.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202004212009322_Mig1.cs" />
-    <Compile Include="Migrations\202004212009322_Mig1.designer.cs">
-      <DependentUpon>202004212009322_Mig1.cs</DependentUpon>
+    <Compile Include="Migrations\202004222337317_init.cs" />
+    <Compile Include="Migrations\202004222337317_init.designer.cs">
+      <DependentUpon>202004222337317_init.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\AbpZeroDbMigrator.cs" />
     <Compile Include="Migrations\Configuration.cs" />
@@ -332,8 +332,8 @@
     <EmbeddedResource Include="Migrations\202003201250482_Ugraded_To_ABP_5_4_0.resx">
       <DependentUpon>202003201250482_Ugraded_To_ABP_5_4_0.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202004212009322_Mig1.resx">
-      <DependentUpon>202004212009322_Mig1.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202004222337317_init.resx">
+      <DependentUpon>202004222337317_init.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

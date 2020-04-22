@@ -1005,3 +1005,914 @@ WARN  2020-04-22 23:27:08,523 [23   ] naries.DictionaryBasedLocalizationSource -
 DEBUG 2020-04-22 23:27:09,619 [17   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"a033cf27-d5fc-4ddb-9ea4-99a002886805","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2020-04-22T23:27:09.6191227+02:00","Properties":{}}
 DEBUG 2020-04-22 23:27:09,640 [17   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: a033cf27-d5fc-4ddb-9ea4-99a002886805
 DEBUG 2020-04-22 23:27:39,458 [21   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 3b8cdb1c-c8a5-42be-bfce-14fd211763c3
+DEBUG 2020-04-22 23:42:45,453 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2020-04-22 23:42:45,487 [1    ] Abp.Modules.AbpModuleManager             - Found 17 ABP modules in total.
+DEBUG 2020-04-22 23:42:45,501 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.Web.GoodHostWebModule, GoodHost.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-22 23:42:45,504 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.GoodHostDataModule, GoodHost.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-22 23:42:45,505 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-22 23:42:45,505 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-22 23:42:45,506 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-22 23:42:45,506 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-22 23:42:45,508 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-22 23:42:45,508 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-22 23:42:45,509 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.GoodHostCoreModule, GoodHost.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-22 23:42:45,509 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.GoodHostApplicationModule, GoodHost.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-22 23:42:45,510 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-22 23:42:45,510 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.Api.GoodHostWebApiModule, GoodHost.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-22 23:42:45,511 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-22 23:42:45,511 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-22 23:42:45,511 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-22 23:42:45,512 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-22 23:42:45,512 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-22 23:42:45,518 [1    ] Abp.Modules.AbpModuleManager             - 17 modules loaded.
+DEBUG 2020-04-22 23:42:46,329 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-22 23:42:46,330 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-22 23:42:46,330 [1    ] o.Configuration.LanguageManagementConfig - Converted GoodHost (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-22 23:42:46,330 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-22 23:42:47,552 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: GoodHost.EntityFramework.GoodHostDbContext, GoodHost.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-22 23:42:55,861 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2020-04-22 23:42:56,140 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2020-04-22 23:42:56,361 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2020-04-22 23:42:56,485 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: GoodHost
+DEBUG 2020-04-22 23:42:56,629 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2020-04-22 23:42:56,931 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2020-04-22 23:42:57,118 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 11 classes define auto mapping attributes
+DEBUG 2020-04-22 23:42:57,118 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2020-04-22 23:42:57,127 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Sessions.Dto.UserLoginInfoDto
+DEBUG 2020-04-22 23:42:57,127 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Users.Dto.CreateUserDto
+DEBUG 2020-04-22 23:42:57,127 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Users.Dto.UpdateUserDto
+DEBUG 2020-04-22 23:42:57,129 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Users.Dto.UserDto
+DEBUG 2020-04-22 23:42:57,129 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Roles.Dto.PermissionDto
+DEBUG 2020-04-22 23:42:57,130 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2020-04-22 23:42:57,130 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.MultiTenancy.Dto.EditTenantDto
+DEBUG 2020-04-22 23:42:57,130 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.MultiTenancy.Dto.TenantDto
+DEBUG 2020-04-22 23:42:57,130 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Web.Models.Account.TenantChangeViewModel
+DEBUG 2020-04-22 23:42:57,130 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2020-04-22 23:43:04,518 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2020-04-22 23:43:04,519 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2020-04-22 23:43:04,520 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2020-04-22 23:43:04,523 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2020-04-22 23:43:04,526 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Configuration.IConfigurationAppService' with service name 'app/configuration'.
+DEBUG 2020-04-22 23:43:04,528 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Authorization.Accounts.IAccountAppService' with service name 'app/account'.
+DEBUG 2020-04-22 23:46:31,499 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2020-04-22 23:46:32,076 [1    ] Abp.Modules.AbpModuleManager             - Found 17 ABP modules in total.
+DEBUG 2020-04-22 23:46:32,085 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.Web.GoodHostWebModule, GoodHost.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-22 23:46:32,088 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.GoodHostDataModule, GoodHost.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-22 23:46:32,088 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-22 23:46:32,088 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-22 23:46:32,088 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-22 23:46:32,089 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-22 23:46:32,089 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-22 23:46:32,089 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-22 23:46:32,090 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.GoodHostCoreModule, GoodHost.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-22 23:46:32,090 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.GoodHostApplicationModule, GoodHost.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-22 23:46:32,090 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-22 23:46:32,090 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.Api.GoodHostWebApiModule, GoodHost.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-22 23:46:32,090 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-22 23:46:32,091 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-22 23:46:32,091 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-22 23:46:32,091 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-22 23:46:32,091 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-22 23:46:32,097 [1    ] Abp.Modules.AbpModuleManager             - 17 modules loaded.
+DEBUG 2020-04-22 23:46:33,168 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-22 23:46:33,168 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-22 23:46:33,168 [1    ] o.Configuration.LanguageManagementConfig - Converted GoodHost (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-22 23:46:33,168 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-22 23:46:34,055 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: GoodHost.EntityFramework.GoodHostDbContext, GoodHost.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-22 23:46:35,671 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2020-04-22 23:46:35,829 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2020-04-22 23:46:35,938 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2020-04-22 23:46:35,985 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: GoodHost
+DEBUG 2020-04-22 23:46:36,057 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2020-04-22 23:46:36,269 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2020-04-22 23:46:36,386 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 11 classes define auto mapping attributes
+DEBUG 2020-04-22 23:46:36,386 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2020-04-22 23:46:36,393 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Sessions.Dto.UserLoginInfoDto
+DEBUG 2020-04-22 23:46:36,393 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Users.Dto.CreateUserDto
+DEBUG 2020-04-22 23:46:36,394 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Users.Dto.UpdateUserDto
+DEBUG 2020-04-22 23:46:36,394 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Users.Dto.UserDto
+DEBUG 2020-04-22 23:46:36,394 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Roles.Dto.PermissionDto
+DEBUG 2020-04-22 23:46:36,394 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2020-04-22 23:46:36,395 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.MultiTenancy.Dto.EditTenantDto
+DEBUG 2020-04-22 23:46:36,395 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.MultiTenancy.Dto.TenantDto
+DEBUG 2020-04-22 23:46:36,396 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Web.Models.Account.TenantChangeViewModel
+DEBUG 2020-04-22 23:46:36,396 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2020-04-22 23:46:40,168 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2020-04-22 23:46:40,169 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2020-04-22 23:46:40,170 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2020-04-22 23:46:40,171 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2020-04-22 23:46:40,173 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Configuration.IConfigurationAppService' with service name 'app/configuration'.
+DEBUG 2020-04-22 23:46:40,174 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Authorization.Accounts.IAccountAppService' with service name 'app/account'.
+DEBUG 2020-04-22 23:48:00,519 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2020-04-22 23:48:00,536 [1    ] Abp.Modules.AbpModuleManager             - Found 17 ABP modules in total.
+DEBUG 2020-04-22 23:48:00,565 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.Web.GoodHostWebModule, GoodHost.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-22 23:48:00,568 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.GoodHostDataModule, GoodHost.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-22 23:48:00,569 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-22 23:48:00,569 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-22 23:48:00,569 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-22 23:48:00,569 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-22 23:48:00,570 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-22 23:48:00,570 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-22 23:48:00,570 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.GoodHostCoreModule, GoodHost.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-22 23:48:00,571 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.GoodHostApplicationModule, GoodHost.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-22 23:48:00,571 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-22 23:48:00,571 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.Api.GoodHostWebApiModule, GoodHost.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-22 23:48:00,571 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-22 23:48:00,571 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-22 23:48:00,572 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-22 23:48:00,572 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-22 23:48:00,572 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-22 23:48:00,578 [1    ] Abp.Modules.AbpModuleManager             - 17 modules loaded.
+DEBUG 2020-04-22 23:48:01,014 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-22 23:48:01,014 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-22 23:48:01,014 [1    ] o.Configuration.LanguageManagementConfig - Converted GoodHost (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-22 23:48:01,015 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-22 23:48:01,861 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: GoodHost.EntityFramework.GoodHostDbContext, GoodHost.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-22 23:48:06,092 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2020-04-22 23:48:06,258 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2020-04-22 23:48:06,351 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2020-04-22 23:48:06,397 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: GoodHost
+DEBUG 2020-04-22 23:48:06,473 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2020-04-22 23:48:06,734 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2020-04-22 23:48:06,810 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 11 classes define auto mapping attributes
+DEBUG 2020-04-22 23:48:06,810 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2020-04-22 23:48:06,820 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Sessions.Dto.UserLoginInfoDto
+DEBUG 2020-04-22 23:48:06,820 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Users.Dto.CreateUserDto
+DEBUG 2020-04-22 23:48:06,821 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Users.Dto.UpdateUserDto
+DEBUG 2020-04-22 23:48:06,821 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Users.Dto.UserDto
+DEBUG 2020-04-22 23:48:06,821 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Roles.Dto.PermissionDto
+DEBUG 2020-04-22 23:48:06,821 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2020-04-22 23:48:06,821 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.MultiTenancy.Dto.EditTenantDto
+DEBUG 2020-04-22 23:48:06,821 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.MultiTenancy.Dto.TenantDto
+DEBUG 2020-04-22 23:48:06,822 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Web.Models.Account.TenantChangeViewModel
+DEBUG 2020-04-22 23:48:06,822 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2020-04-22 23:48:10,901 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2020-04-22 23:48:10,903 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2020-04-22 23:48:10,905 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2020-04-22 23:48:10,908 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2020-04-22 23:48:10,910 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Configuration.IConfigurationAppService' with service name 'app/configuration'.
+DEBUG 2020-04-22 23:48:10,911 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Authorization.Accounts.IAccountAppService' with service name 'app/account'.
+DEBUG 2020-04-22 23:52:29,952 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2020-04-22 23:52:29,974 [1    ] Abp.Modules.AbpModuleManager             - Found 17 ABP modules in total.
+DEBUG 2020-04-22 23:52:29,983 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.Web.GoodHostWebModule, GoodHost.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-22 23:52:29,985 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.GoodHostDataModule, GoodHost.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-22 23:52:29,985 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-22 23:52:29,986 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-22 23:52:29,986 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-22 23:52:29,986 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-22 23:52:29,986 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-22 23:52:29,986 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-22 23:52:29,987 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.GoodHostCoreModule, GoodHost.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-22 23:52:29,987 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.GoodHostApplicationModule, GoodHost.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-22 23:52:29,987 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-22 23:52:29,987 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.Api.GoodHostWebApiModule, GoodHost.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-22 23:52:29,987 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-22 23:52:29,987 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-22 23:52:29,988 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-22 23:52:29,988 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-22 23:52:29,989 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-22 23:52:29,994 [1    ] Abp.Modules.AbpModuleManager             - 17 modules loaded.
+DEBUG 2020-04-22 23:52:30,439 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-22 23:52:30,439 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-22 23:52:30,439 [1    ] o.Configuration.LanguageManagementConfig - Converted GoodHost (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-22 23:52:30,439 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-22 23:52:31,355 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: GoodHost.EntityFramework.GoodHostDbContext, GoodHost.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-22 23:52:36,110 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2020-04-22 23:52:36,277 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2020-04-22 23:52:36,382 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2020-04-22 23:52:36,467 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: GoodHost
+DEBUG 2020-04-22 23:52:36,584 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2020-04-22 23:52:36,929 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2020-04-22 23:52:37,015 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 11 classes define auto mapping attributes
+DEBUG 2020-04-22 23:52:37,016 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2020-04-22 23:52:37,023 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Sessions.Dto.UserLoginInfoDto
+DEBUG 2020-04-22 23:52:37,023 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Users.Dto.CreateUserDto
+DEBUG 2020-04-22 23:52:37,023 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Users.Dto.UpdateUserDto
+DEBUG 2020-04-22 23:52:37,024 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Users.Dto.UserDto
+DEBUG 2020-04-22 23:52:37,024 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Roles.Dto.PermissionDto
+DEBUG 2020-04-22 23:52:37,024 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2020-04-22 23:52:37,024 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.MultiTenancy.Dto.EditTenantDto
+DEBUG 2020-04-22 23:52:37,024 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.MultiTenancy.Dto.TenantDto
+DEBUG 2020-04-22 23:52:37,025 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Web.Models.Account.TenantChangeViewModel
+DEBUG 2020-04-22 23:52:37,025 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2020-04-22 23:52:41,773 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2020-04-22 23:52:41,775 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2020-04-22 23:52:41,777 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2020-04-22 23:52:41,779 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2020-04-22 23:52:41,783 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Configuration.IConfigurationAppService' with service name 'app/configuration'.
+DEBUG 2020-04-22 23:52:41,785 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Authorization.Accounts.IAccountAppService' with service name 'app/account'.
+DEBUG 2020-04-23 00:01:20,454 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2020-04-23 00:01:21,008 [1    ] Abp.Modules.AbpModuleManager             - Found 17 ABP modules in total.
+DEBUG 2020-04-23 00:01:21,022 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.Web.GoodHostWebModule, GoodHost.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:01:21,025 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.GoodHostDataModule, GoodHost.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:01:21,025 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:01:21,026 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:01:21,026 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:01:21,026 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:01:21,026 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:01:21,027 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:01:21,027 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.GoodHostCoreModule, GoodHost.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:01:21,027 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.GoodHostApplicationModule, GoodHost.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:01:21,027 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:01:21,028 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.Api.GoodHostWebApiModule, GoodHost.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:01:21,028 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:01:21,028 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:01:21,028 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:01:21,029 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:01:21,029 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:01:21,036 [1    ] Abp.Modules.AbpModuleManager             - 17 modules loaded.
+DEBUG 2020-04-23 00:01:22,225 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-23 00:01:22,225 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-23 00:01:22,225 [1    ] o.Configuration.LanguageManagementConfig - Converted GoodHost (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-23 00:01:22,226 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-23 00:01:23,070 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: GoodHost.EntityFramework.GoodHostDbContext, GoodHost.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:01:25,423 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2020-04-23 00:01:25,731 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2020-04-23 00:01:25,901 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2020-04-23 00:01:25,991 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: GoodHost
+DEBUG 2020-04-23 00:01:26,096 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2020-04-23 00:01:26,441 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2020-04-23 00:01:26,546 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 11 classes define auto mapping attributes
+DEBUG 2020-04-23 00:01:26,546 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2020-04-23 00:01:26,560 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Sessions.Dto.UserLoginInfoDto
+DEBUG 2020-04-23 00:01:26,561 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Users.Dto.CreateUserDto
+DEBUG 2020-04-23 00:01:26,562 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Users.Dto.UpdateUserDto
+DEBUG 2020-04-23 00:01:26,562 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Users.Dto.UserDto
+DEBUG 2020-04-23 00:01:26,562 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Roles.Dto.PermissionDto
+DEBUG 2020-04-23 00:01:26,563 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2020-04-23 00:01:26,563 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.MultiTenancy.Dto.EditTenantDto
+DEBUG 2020-04-23 00:01:26,563 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.MultiTenancy.Dto.TenantDto
+DEBUG 2020-04-23 00:01:26,564 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Web.Models.Account.TenantChangeViewModel
+DEBUG 2020-04-23 00:01:26,564 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2020-04-23 00:01:33,770 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2020-04-23 00:01:33,772 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2020-04-23 00:01:33,774 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2020-04-23 00:01:33,779 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2020-04-23 00:01:33,784 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Configuration.IConfigurationAppService' with service name 'app/configuration'.
+DEBUG 2020-04-23 00:01:33,792 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Authorization.Accounts.IAccountAppService' with service name 'app/account'.
+DEBUG 2020-04-23 00:06:07,410 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2020-04-23 00:06:07,803 [1    ] Abp.Modules.AbpModuleManager             - Found 17 ABP modules in total.
+DEBUG 2020-04-23 00:06:07,819 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.Web.GoodHostWebModule, GoodHost.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:06:07,821 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.GoodHostDataModule, GoodHost.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:06:07,821 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:06:07,821 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:06:07,822 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:06:07,823 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:06:07,824 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:06:07,824 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:06:07,824 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.GoodHostCoreModule, GoodHost.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:06:07,824 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.GoodHostApplicationModule, GoodHost.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:06:07,825 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:06:07,825 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.Api.GoodHostWebApiModule, GoodHost.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:06:07,825 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:06:07,825 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:06:07,826 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:06:07,826 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:06:07,826 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:06:07,830 [1    ] Abp.Modules.AbpModuleManager             - 17 modules loaded.
+DEBUG 2020-04-23 00:06:09,031 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-23 00:06:09,031 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-23 00:06:09,031 [1    ] o.Configuration.LanguageManagementConfig - Converted GoodHost (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-23 00:06:09,031 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-23 00:06:09,845 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: GoodHost.EntityFramework.GoodHostDbContext, GoodHost.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:06:11,491 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2020-04-23 00:06:11,685 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2020-04-23 00:06:11,796 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2020-04-23 00:06:11,868 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: GoodHost
+DEBUG 2020-04-23 00:06:11,958 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2020-04-23 00:06:12,191 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2020-04-23 00:06:12,281 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 11 classes define auto mapping attributes
+DEBUG 2020-04-23 00:06:12,281 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2020-04-23 00:06:12,288 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Sessions.Dto.UserLoginInfoDto
+DEBUG 2020-04-23 00:06:12,288 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Users.Dto.CreateUserDto
+DEBUG 2020-04-23 00:06:12,290 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Users.Dto.UpdateUserDto
+DEBUG 2020-04-23 00:06:12,291 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Users.Dto.UserDto
+DEBUG 2020-04-23 00:06:12,291 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Roles.Dto.PermissionDto
+DEBUG 2020-04-23 00:06:12,291 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2020-04-23 00:06:12,291 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.MultiTenancy.Dto.EditTenantDto
+DEBUG 2020-04-23 00:06:12,292 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.MultiTenancy.Dto.TenantDto
+DEBUG 2020-04-23 00:06:12,292 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Web.Models.Account.TenantChangeViewModel
+DEBUG 2020-04-23 00:06:12,292 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2020-04-23 00:06:16,538 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2020-04-23 00:06:16,540 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2020-04-23 00:06:16,542 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2020-04-23 00:06:16,543 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2020-04-23 00:06:16,544 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Configuration.IConfigurationAppService' with service name 'app/configuration'.
+DEBUG 2020-04-23 00:06:16,545 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Authorization.Accounts.IAccountAppService' with service name 'app/account'.
+DEBUG 2020-04-23 00:16:08,504 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2020-04-23 00:16:08,520 [1    ] Abp.Modules.AbpModuleManager             - Found 17 ABP modules in total.
+DEBUG 2020-04-23 00:16:08,528 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.Web.GoodHostWebModule, GoodHost.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:16:08,530 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.GoodHostDataModule, GoodHost.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:16:08,531 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:16:08,531 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:16:08,531 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:16:08,531 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:16:08,532 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:16:08,532 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:16:08,532 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.GoodHostCoreModule, GoodHost.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:16:08,532 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.GoodHostApplicationModule, GoodHost.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:16:08,532 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:16:08,533 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.Api.GoodHostWebApiModule, GoodHost.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:16:08,533 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:16:08,533 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:16:08,533 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:16:08,533 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:16:08,533 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:16:08,537 [1    ] Abp.Modules.AbpModuleManager             - 17 modules loaded.
+DEBUG 2020-04-23 00:16:08,937 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-23 00:16:08,937 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-23 00:16:08,937 [1    ] o.Configuration.LanguageManagementConfig - Converted GoodHost (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-23 00:16:08,937 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-23 00:16:09,591 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: GoodHost.EntityFramework.GoodHostDbContext, GoodHost.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:16:14,030 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2020-04-23 00:16:14,243 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2020-04-23 00:16:14,359 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2020-04-23 00:16:14,419 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: GoodHost
+DEBUG 2020-04-23 00:16:14,507 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2020-04-23 00:16:14,799 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2020-04-23 00:16:14,890 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 11 classes define auto mapping attributes
+DEBUG 2020-04-23 00:16:14,890 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2020-04-23 00:16:14,898 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Sessions.Dto.UserLoginInfoDto
+DEBUG 2020-04-23 00:16:14,899 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Users.Dto.CreateUserDto
+DEBUG 2020-04-23 00:16:14,899 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Users.Dto.UpdateUserDto
+DEBUG 2020-04-23 00:16:14,899 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Users.Dto.UserDto
+DEBUG 2020-04-23 00:16:14,899 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Roles.Dto.PermissionDto
+DEBUG 2020-04-23 00:16:14,899 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2020-04-23 00:16:14,900 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.MultiTenancy.Dto.EditTenantDto
+DEBUG 2020-04-23 00:16:14,900 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.MultiTenancy.Dto.TenantDto
+DEBUG 2020-04-23 00:16:14,918 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Web.Models.Account.TenantChangeViewModel
+DEBUG 2020-04-23 00:16:14,918 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2020-04-23 00:16:18,727 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2020-04-23 00:16:18,729 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2020-04-23 00:16:18,731 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2020-04-23 00:16:18,733 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2020-04-23 00:16:18,734 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Configuration.IConfigurationAppService' with service name 'app/configuration'.
+DEBUG 2020-04-23 00:16:18,735 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Authorization.Accounts.IAccountAppService' with service name 'app/account'.
+DEBUG 2020-04-23 00:17:25,636 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2020-04-23 00:17:25,657 [1    ] Abp.Modules.AbpModuleManager             - Found 17 ABP modules in total.
+DEBUG 2020-04-23 00:17:25,669 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.Web.GoodHostWebModule, GoodHost.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:17:25,671 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.GoodHostDataModule, GoodHost.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:17:25,671 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:17:25,672 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:17:25,672 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:17:25,672 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:17:25,672 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:17:25,673 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:17:25,673 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.GoodHostCoreModule, GoodHost.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:17:25,673 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.GoodHostApplicationModule, GoodHost.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:17:25,673 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:17:25,673 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.Api.GoodHostWebApiModule, GoodHost.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:17:25,673 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:17:25,674 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:17:25,674 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:17:25,676 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:17:25,676 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:17:25,682 [1    ] Abp.Modules.AbpModuleManager             - 17 modules loaded.
+DEBUG 2020-04-23 00:17:26,144 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-23 00:17:26,144 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-23 00:17:26,144 [1    ] o.Configuration.LanguageManagementConfig - Converted GoodHost (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-23 00:17:26,144 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-23 00:17:26,884 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: GoodHost.EntityFramework.GoodHostDbContext, GoodHost.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:17:30,690 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2020-04-23 00:17:30,880 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2020-04-23 00:17:31,040 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2020-04-23 00:17:31,120 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: GoodHost
+DEBUG 2020-04-23 00:17:31,213 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2020-04-23 00:17:31,503 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2020-04-23 00:17:31,619 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 11 classes define auto mapping attributes
+DEBUG 2020-04-23 00:17:31,619 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2020-04-23 00:17:31,633 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Sessions.Dto.UserLoginInfoDto
+DEBUG 2020-04-23 00:17:31,635 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Users.Dto.CreateUserDto
+DEBUG 2020-04-23 00:17:31,635 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Users.Dto.UpdateUserDto
+DEBUG 2020-04-23 00:17:31,636 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Users.Dto.UserDto
+DEBUG 2020-04-23 00:17:31,636 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Roles.Dto.PermissionDto
+DEBUG 2020-04-23 00:17:31,636 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2020-04-23 00:17:31,637 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.MultiTenancy.Dto.EditTenantDto
+DEBUG 2020-04-23 00:17:31,637 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.MultiTenancy.Dto.TenantDto
+DEBUG 2020-04-23 00:17:31,637 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Web.Models.Account.TenantChangeViewModel
+DEBUG 2020-04-23 00:17:31,637 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2020-04-23 00:17:35,431 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2020-04-23 00:17:35,433 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2020-04-23 00:17:35,435 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2020-04-23 00:17:35,436 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2020-04-23 00:17:35,438 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Configuration.IConfigurationAppService' with service name 'app/configuration'.
+DEBUG 2020-04-23 00:17:35,440 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Authorization.Accounts.IAccountAppService' with service name 'app/account'.
+DEBUG 2020-04-23 00:27:10,077 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2020-04-23 00:27:10,095 [1    ] Abp.Modules.AbpModuleManager             - Found 17 ABP modules in total.
+DEBUG 2020-04-23 00:27:10,105 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.Web.GoodHostWebModule, GoodHost.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:27:10,108 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.GoodHostDataModule, GoodHost.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:27:10,108 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:27:10,108 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:27:10,109 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:27:10,109 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:27:10,110 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:27:10,110 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:27:10,114 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.GoodHostCoreModule, GoodHost.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:27:10,114 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.GoodHostApplicationModule, GoodHost.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:27:10,114 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:27:10,115 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.Api.GoodHostWebApiModule, GoodHost.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:27:10,115 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:27:10,115 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:27:10,115 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:27:10,116 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:27:10,116 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:27:10,124 [1    ] Abp.Modules.AbpModuleManager             - 17 modules loaded.
+DEBUG 2020-04-23 00:27:10,607 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-23 00:27:10,607 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-23 00:27:10,607 [1    ] o.Configuration.LanguageManagementConfig - Converted GoodHost (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-23 00:27:10,607 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-23 00:27:11,291 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: GoodHost.EntityFramework.GoodHostDbContext, GoodHost.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:27:15,305 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2020-04-23 00:27:15,516 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2020-04-23 00:27:15,620 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2020-04-23 00:27:15,700 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: GoodHost
+DEBUG 2020-04-23 00:27:15,774 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2020-04-23 00:27:16,050 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2020-04-23 00:27:16,130 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 11 classes define auto mapping attributes
+DEBUG 2020-04-23 00:27:16,130 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2020-04-23 00:27:16,137 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Sessions.Dto.UserLoginInfoDto
+DEBUG 2020-04-23 00:27:16,137 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Users.Dto.CreateUserDto
+DEBUG 2020-04-23 00:27:16,138 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Users.Dto.UpdateUserDto
+DEBUG 2020-04-23 00:27:16,138 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Users.Dto.UserDto
+DEBUG 2020-04-23 00:27:16,138 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Roles.Dto.PermissionDto
+DEBUG 2020-04-23 00:27:16,138 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2020-04-23 00:27:16,138 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.MultiTenancy.Dto.EditTenantDto
+DEBUG 2020-04-23 00:27:16,138 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.MultiTenancy.Dto.TenantDto
+DEBUG 2020-04-23 00:27:16,139 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Web.Models.Account.TenantChangeViewModel
+DEBUG 2020-04-23 00:27:16,139 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2020-04-23 00:27:19,963 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2020-04-23 00:27:19,965 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2020-04-23 00:27:19,966 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2020-04-23 00:27:19,967 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2020-04-23 00:27:19,968 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Configuration.IConfigurationAppService' with service name 'app/configuration'.
+DEBUG 2020-04-23 00:27:19,970 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Authorization.Accounts.IAccountAppService' with service name 'app/account'.
+DEBUG 2020-04-23 00:28:39,317 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2020-04-23 00:28:39,650 [1    ] Abp.Modules.AbpModuleManager             - Found 17 ABP modules in total.
+DEBUG 2020-04-23 00:28:39,658 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.Web.GoodHostWebModule, GoodHost.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:28:39,660 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.GoodHostDataModule, GoodHost.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:28:39,661 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:28:39,661 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:28:39,661 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:28:39,661 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:28:39,662 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:28:39,663 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:28:39,663 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.GoodHostCoreModule, GoodHost.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:28:39,664 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.GoodHostApplicationModule, GoodHost.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:28:39,664 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:28:39,664 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.Api.GoodHostWebApiModule, GoodHost.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:28:39,665 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:28:39,665 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:28:39,665 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:28:39,665 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:28:39,666 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:28:39,669 [1    ] Abp.Modules.AbpModuleManager             - 17 modules loaded.
+DEBUG 2020-04-23 00:28:40,467 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-23 00:28:40,467 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-23 00:28:40,467 [1    ] o.Configuration.LanguageManagementConfig - Converted GoodHost (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-23 00:28:40,467 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-23 00:28:41,177 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: GoodHost.EntityFramework.GoodHostDbContext, GoodHost.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:28:43,123 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2020-04-23 00:28:43,423 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2020-04-23 00:28:43,636 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2020-04-23 00:28:43,736 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: GoodHost
+DEBUG 2020-04-23 00:28:43,865 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2020-04-23 00:28:44,243 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2020-04-23 00:28:44,450 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 11 classes define auto mapping attributes
+DEBUG 2020-04-23 00:28:44,450 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2020-04-23 00:28:44,467 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Sessions.Dto.UserLoginInfoDto
+DEBUG 2020-04-23 00:28:44,469 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Users.Dto.CreateUserDto
+DEBUG 2020-04-23 00:28:44,470 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Users.Dto.UpdateUserDto
+DEBUG 2020-04-23 00:28:44,470 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Users.Dto.UserDto
+DEBUG 2020-04-23 00:28:44,471 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Roles.Dto.PermissionDto
+DEBUG 2020-04-23 00:28:44,471 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2020-04-23 00:28:44,471 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.MultiTenancy.Dto.EditTenantDto
+DEBUG 2020-04-23 00:28:44,471 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.MultiTenancy.Dto.TenantDto
+DEBUG 2020-04-23 00:28:44,472 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Web.Models.Account.TenantChangeViewModel
+DEBUG 2020-04-23 00:28:44,474 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2020-04-23 00:28:56,260 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2020-04-23 00:28:56,267 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2020-04-23 00:28:56,269 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2020-04-23 00:28:56,271 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2020-04-23 00:28:56,275 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Configuration.IConfigurationAppService' with service name 'app/configuration'.
+DEBUG 2020-04-23 00:28:56,277 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Authorization.Accounts.IAccountAppService' with service name 'app/account'.
+ERROR 2020-04-23 00:29:09,414 [6    ] GoodHost.Web.Controllers.HomeController  - No language defined!
+Abp.AbpException: No language defined!
+   at Abp.Localization.MultiTenantLocalizationDictionaryProvider.GetDefaultDictionary()
+   at Abp.Localization.MultiTenantLocalizationDictionaryProvider.get_DefaultDictionary()
+   at Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource.GetStringOrNull(String name, CultureInfo culture, Boolean tryDefaults)
+   at Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource.GetString(String name)
+   at Abp.Authorization.AuthorizationHelper.Authorize(IEnumerable`1 authorizeAttributes)
+   at Abp.Authorization.AuthorizationHelper.CheckPermissions(MethodInfo methodInfo, Type type)
+   at Abp.Authorization.AuthorizationHelper.Authorize(MethodInfo methodInfo, Type type)
+   at Abp.Web.Mvc.Authorization.AbpMvcAuthorizeFilter.OnAuthorization(AuthorizationContext filterContext)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAuthorizationFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__0(AsyncCallback asyncCallback, Object asyncState)
+ERROR 2020-04-23 00:29:35,100 [6    ] GoodHost.Web.Controllers.HomeController  - No language defined!
+Abp.AbpException: No language defined!
+   at Abp.Localization.MultiTenantLocalizationDictionaryProvider.GetDefaultDictionary()
+   at Abp.Localization.MultiTenantLocalizationDictionaryProvider.get_DefaultDictionary()
+   at Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource.GetStringOrNull(String name, CultureInfo culture, Boolean tryDefaults)
+   at Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource.GetString(String name)
+   at Abp.Authorization.AuthorizationHelper.Authorize(IEnumerable`1 authorizeAttributes)
+   at Abp.Authorization.AuthorizationHelper.CheckPermissions(MethodInfo methodInfo, Type type)
+   at Abp.Authorization.AuthorizationHelper.Authorize(MethodInfo methodInfo, Type type)
+   at Abp.Web.Mvc.Authorization.AbpMvcAuthorizeFilter.OnAuthorization(AuthorizationContext filterContext)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAuthorizationFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__0(AsyncCallback asyncCallback, Object asyncState)
+ERROR 2020-04-23 00:29:38,937 [7    ] GoodHost.Web.Controllers.HomeController  - No language defined!
+Abp.AbpException: No language defined!
+   at Abp.Localization.MultiTenantLocalizationDictionaryProvider.GetDefaultDictionary()
+   at Abp.Localization.MultiTenantLocalizationDictionaryProvider.get_DefaultDictionary()
+   at Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource.GetStringOrNull(String name, CultureInfo culture, Boolean tryDefaults)
+   at Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource.GetString(String name)
+   at Abp.Authorization.AuthorizationHelper.Authorize(IEnumerable`1 authorizeAttributes)
+   at Abp.Authorization.AuthorizationHelper.CheckPermissions(MethodInfo methodInfo, Type type)
+   at Abp.Authorization.AuthorizationHelper.Authorize(MethodInfo methodInfo, Type type)
+   at Abp.Web.Mvc.Authorization.AbpMvcAuthorizeFilter.OnAuthorization(AuthorizationContext filterContext)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAuthorizationFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__0(AsyncCallback asyncCallback, Object asyncState)
+ERROR 2020-04-23 00:29:51,935 [11   ] GoodHost.Web.Controllers.HomeController  - No language defined!
+Abp.AbpException: No language defined!
+   at Abp.Localization.MultiTenantLocalizationDictionaryProvider.GetDefaultDictionary()
+   at Abp.Localization.MultiTenantLocalizationDictionaryProvider.get_DefaultDictionary()
+   at Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource.GetStringOrNull(String name, CultureInfo culture, Boolean tryDefaults)
+   at Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource.GetString(String name)
+   at Abp.Authorization.AuthorizationHelper.Authorize(IEnumerable`1 authorizeAttributes)
+   at Abp.Authorization.AuthorizationHelper.CheckPermissions(MethodInfo methodInfo, Type type)
+   at Abp.Authorization.AuthorizationHelper.Authorize(MethodInfo methodInfo, Type type)
+   at Abp.Web.Mvc.Authorization.AbpMvcAuthorizeFilter.OnAuthorization(AuthorizationContext filterContext)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAuthorizationFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__0(AsyncCallback asyncCallback, Object asyncState)
+DEBUG 2020-04-23 00:58:11,680 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2020-04-23 00:58:11,711 [1    ] Abp.Modules.AbpModuleManager             - Found 17 ABP modules in total.
+DEBUG 2020-04-23 00:58:11,737 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.Web.GoodHostWebModule, GoodHost.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:58:11,740 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.GoodHostDataModule, GoodHost.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:58:11,740 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:58:11,740 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:58:11,741 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:58:11,741 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:58:11,742 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:58:11,742 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:58:11,742 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.GoodHostCoreModule, GoodHost.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:58:11,742 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.GoodHostApplicationModule, GoodHost.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:58:11,743 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:58:11,743 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.Api.GoodHostWebApiModule, GoodHost.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:58:11,743 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:58:11,744 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:58:11,744 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:58:11,745 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:58:11,745 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:58:11,755 [1    ] Abp.Modules.AbpModuleManager             - 17 modules loaded.
+DEBUG 2020-04-23 00:58:12,412 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-23 00:58:12,412 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-23 00:58:12,412 [1    ] o.Configuration.LanguageManagementConfig - Converted GoodHost (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-23 00:58:12,412 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-23 00:58:13,290 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: GoodHost.EntityFramework.GoodHostDbContext, GoodHost.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 00:58:19,272 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2020-04-23 00:58:19,535 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2020-04-23 00:58:19,685 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2020-04-23 00:58:19,791 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: GoodHost
+DEBUG 2020-04-23 00:58:19,914 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2020-04-23 00:58:20,222 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2020-04-23 00:58:20,380 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 11 classes define auto mapping attributes
+DEBUG 2020-04-23 00:58:20,380 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2020-04-23 00:58:20,396 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Sessions.Dto.UserLoginInfoDto
+DEBUG 2020-04-23 00:58:20,398 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Users.Dto.CreateUserDto
+DEBUG 2020-04-23 00:58:20,399 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Users.Dto.UpdateUserDto
+DEBUG 2020-04-23 00:58:20,400 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Users.Dto.UserDto
+DEBUG 2020-04-23 00:58:20,400 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Roles.Dto.PermissionDto
+DEBUG 2020-04-23 00:58:20,400 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2020-04-23 00:58:20,401 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.MultiTenancy.Dto.EditTenantDto
+DEBUG 2020-04-23 00:58:20,401 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.MultiTenancy.Dto.TenantDto
+DEBUG 2020-04-23 00:58:20,401 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Web.Models.Account.TenantChangeViewModel
+DEBUG 2020-04-23 00:58:20,401 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2020-04-23 01:03:03,429 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2020-04-23 01:03:03,448 [1    ] Abp.Modules.AbpModuleManager             - Found 17 ABP modules in total.
+DEBUG 2020-04-23 01:03:03,466 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.Web.GoodHostWebModule, GoodHost.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 01:03:03,470 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.GoodHostDataModule, GoodHost.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 01:03:03,470 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 01:03:03,470 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 01:03:03,470 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 01:03:03,471 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 01:03:03,471 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 01:03:03,472 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 01:03:03,472 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.GoodHostCoreModule, GoodHost.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 01:03:03,472 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.GoodHostApplicationModule, GoodHost.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 01:03:03,472 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 01:03:03,473 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.Api.GoodHostWebApiModule, GoodHost.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 01:03:03,473 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 01:03:03,473 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 01:03:03,473 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 01:03:03,473 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 01:03:03,473 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 01:03:03,477 [1    ] Abp.Modules.AbpModuleManager             - 17 modules loaded.
+DEBUG 2020-04-23 01:03:04,128 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-23 01:03:04,128 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-23 01:03:04,128 [1    ] o.Configuration.LanguageManagementConfig - Converted GoodHost (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-23 01:03:04,129 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-23 01:03:05,062 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: GoodHost.EntityFramework.GoodHostDbContext, GoodHost.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 01:03:10,647 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2020-04-23 01:03:10,862 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2020-04-23 01:03:11,009 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2020-04-23 01:03:11,070 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: GoodHost
+DEBUG 2020-04-23 01:03:11,133 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2020-04-23 01:03:11,516 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2020-04-23 01:03:11,670 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 11 classes define auto mapping attributes
+DEBUG 2020-04-23 01:03:11,670 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2020-04-23 01:03:11,680 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Sessions.Dto.UserLoginInfoDto
+DEBUG 2020-04-23 01:03:11,681 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Users.Dto.CreateUserDto
+DEBUG 2020-04-23 01:03:11,681 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Users.Dto.UpdateUserDto
+DEBUG 2020-04-23 01:03:11,681 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Users.Dto.UserDto
+DEBUG 2020-04-23 01:03:11,681 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Roles.Dto.PermissionDto
+DEBUG 2020-04-23 01:03:11,682 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2020-04-23 01:03:11,682 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.MultiTenancy.Dto.EditTenantDto
+DEBUG 2020-04-23 01:03:11,682 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.MultiTenancy.Dto.TenantDto
+DEBUG 2020-04-23 01:03:11,682 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Web.Models.Account.TenantChangeViewModel
+DEBUG 2020-04-23 01:03:11,682 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2020-04-23 01:03:17,677 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2020-04-23 01:03:17,678 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2020-04-23 01:03:17,680 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2020-04-23 01:03:17,681 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2020-04-23 01:03:17,682 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Configuration.IConfigurationAppService' with service name 'app/configuration'.
+DEBUG 2020-04-23 01:03:17,683 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Authorization.Accounts.IAccountAppService' with service name 'app/account'.
+DEBUG 2020-04-23 01:21:38,831 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2020-04-23 01:21:38,846 [1    ] Abp.Modules.AbpModuleManager             - Found 17 ABP modules in total.
+DEBUG 2020-04-23 01:21:38,854 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.Web.GoodHostWebModule, GoodHost.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 01:21:38,857 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.GoodHostDataModule, GoodHost.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 01:21:38,857 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 01:21:38,857 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 01:21:38,857 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 01:21:38,857 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 01:21:38,858 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 01:21:38,858 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 01:21:38,858 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.GoodHostCoreModule, GoodHost.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 01:21:38,858 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.GoodHostApplicationModule, GoodHost.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 01:21:38,859 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 01:21:38,859 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.Api.GoodHostWebApiModule, GoodHost.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 01:21:38,859 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 01:21:38,859 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 01:21:38,859 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 01:21:38,860 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 01:21:38,860 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 01:21:38,864 [1    ] Abp.Modules.AbpModuleManager             - 17 modules loaded.
+DEBUG 2020-04-23 01:21:39,233 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-23 01:21:39,234 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-23 01:21:39,234 [1    ] o.Configuration.LanguageManagementConfig - Converted GoodHost (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-23 01:21:39,234 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-23 01:21:39,892 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: GoodHost.EntityFramework.GoodHostDbContext, GoodHost.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 01:21:43,878 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2020-04-23 01:21:44,066 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2020-04-23 01:21:44,180 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2020-04-23 01:21:44,257 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: GoodHost
+DEBUG 2020-04-23 01:21:44,326 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2020-04-23 01:21:44,558 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2020-04-23 01:21:44,633 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 11 classes define auto mapping attributes
+DEBUG 2020-04-23 01:21:44,633 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2020-04-23 01:21:44,640 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Sessions.Dto.UserLoginInfoDto
+DEBUG 2020-04-23 01:21:44,640 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Users.Dto.CreateUserDto
+DEBUG 2020-04-23 01:21:44,641 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Users.Dto.UpdateUserDto
+DEBUG 2020-04-23 01:21:44,641 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Users.Dto.UserDto
+DEBUG 2020-04-23 01:21:44,641 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Roles.Dto.PermissionDto
+DEBUG 2020-04-23 01:21:44,642 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2020-04-23 01:21:44,642 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.MultiTenancy.Dto.EditTenantDto
+DEBUG 2020-04-23 01:21:44,643 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.MultiTenancy.Dto.TenantDto
+DEBUG 2020-04-23 01:21:44,643 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Web.Models.Account.TenantChangeViewModel
+DEBUG 2020-04-23 01:21:44,643 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2020-04-23 01:21:48,285 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2020-04-23 01:21:48,286 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2020-04-23 01:21:48,287 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2020-04-23 01:21:48,289 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2020-04-23 01:21:48,291 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Configuration.IConfigurationAppService' with service name 'app/configuration'.
+DEBUG 2020-04-23 01:21:48,292 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Authorization.Accounts.IAccountAppService' with service name 'app/account'.
+DEBUG 2020-04-23 01:23:09,427 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2020-04-23 01:23:09,451 [1    ] Abp.Modules.AbpModuleManager             - Found 17 ABP modules in total.
+DEBUG 2020-04-23 01:23:09,465 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.Web.GoodHostWebModule, GoodHost.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 01:23:09,467 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.GoodHostDataModule, GoodHost.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 01:23:09,467 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 01:23:09,467 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 01:23:09,467 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 01:23:09,467 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 01:23:09,469 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 01:23:09,469 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 01:23:09,469 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.GoodHostCoreModule, GoodHost.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 01:23:09,470 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.GoodHostApplicationModule, GoodHost.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 01:23:09,470 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 01:23:09,470 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.Api.GoodHostWebApiModule, GoodHost.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 01:23:09,470 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 01:23:09,470 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 01:23:09,470 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 01:23:09,471 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 01:23:09,471 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 01:23:09,478 [1    ] Abp.Modules.AbpModuleManager             - 17 modules loaded.
+DEBUG 2020-04-23 01:23:09,855 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-23 01:23:09,855 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-23 01:23:09,855 [1    ] o.Configuration.LanguageManagementConfig - Converted GoodHost (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-23 01:23:09,855 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-23 01:23:10,510 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: GoodHost.EntityFramework.GoodHostDbContext, GoodHost.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 01:23:14,814 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2020-04-23 01:23:14,984 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2020-04-23 01:23:15,104 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2020-04-23 01:23:15,150 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: GoodHost
+DEBUG 2020-04-23 01:23:15,211 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2020-04-23 01:23:15,504 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2020-04-23 01:23:15,582 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 11 classes define auto mapping attributes
+DEBUG 2020-04-23 01:23:15,583 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2020-04-23 01:23:15,589 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Sessions.Dto.UserLoginInfoDto
+DEBUG 2020-04-23 01:23:15,590 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Users.Dto.CreateUserDto
+DEBUG 2020-04-23 01:23:15,591 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Users.Dto.UpdateUserDto
+DEBUG 2020-04-23 01:23:15,591 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Users.Dto.UserDto
+DEBUG 2020-04-23 01:23:15,591 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Roles.Dto.PermissionDto
+DEBUG 2020-04-23 01:23:15,591 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2020-04-23 01:23:15,592 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.MultiTenancy.Dto.EditTenantDto
+DEBUG 2020-04-23 01:23:15,592 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.MultiTenancy.Dto.TenantDto
+DEBUG 2020-04-23 01:23:15,592 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Web.Models.Account.TenantChangeViewModel
+DEBUG 2020-04-23 01:23:15,592 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2020-04-23 01:23:19,294 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2020-04-23 01:23:19,298 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2020-04-23 01:23:19,299 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2020-04-23 01:23:19,300 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2020-04-23 01:23:19,301 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Configuration.IConfigurationAppService' with service name 'app/configuration'.
+DEBUG 2020-04-23 01:23:19,303 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Authorization.Accounts.IAccountAppService' with service name 'app/account'.
+ERROR 2020-04-23 01:23:26,388 [9    ] GoodHost.Web.Controllers.HomeController  - No language defined!
+Abp.AbpException: No language defined!
+   at Abp.Localization.MultiTenantLocalizationDictionaryProvider.GetDefaultDictionary()
+   at Abp.Localization.MultiTenantLocalizationDictionaryProvider.get_DefaultDictionary()
+   at Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource.GetStringOrNull(String name, CultureInfo culture, Boolean tryDefaults)
+   at Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource.GetString(String name)
+   at Abp.Authorization.AuthorizationHelper.Authorize(IEnumerable`1 authorizeAttributes)
+   at Abp.Authorization.AuthorizationHelper.CheckPermissions(MethodInfo methodInfo, Type type)
+   at Abp.Authorization.AuthorizationHelper.Authorize(MethodInfo methodInfo, Type type)
+   at Abp.Web.Mvc.Authorization.AbpMvcAuthorizeFilter.OnAuthorization(AuthorizationContext filterContext)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAuthorizationFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__0(AsyncCallback asyncCallback, Object asyncState)
+DEBUG 2020-04-23 01:27:18,207 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2020-04-23 01:27:18,553 [1    ] Abp.Modules.AbpModuleManager             - Found 17 ABP modules in total.
+DEBUG 2020-04-23 01:27:18,571 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.Web.GoodHostWebModule, GoodHost.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 01:27:18,574 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.GoodHostDataModule, GoodHost.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 01:27:18,574 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 01:27:18,575 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 01:27:18,575 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 01:27:18,575 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 01:27:18,576 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 01:27:18,576 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 01:27:18,576 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.GoodHostCoreModule, GoodHost.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 01:27:18,577 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.GoodHostApplicationModule, GoodHost.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 01:27:18,577 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 01:27:18,577 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.Api.GoodHostWebApiModule, GoodHost.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 01:27:18,578 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 01:27:18,578 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 01:27:18,578 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 01:27:18,578 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 01:27:18,579 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 01:27:18,586 [1    ] Abp.Modules.AbpModuleManager             - 17 modules loaded.
+DEBUG 2020-04-23 01:27:19,426 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-23 01:27:19,426 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-23 01:27:19,426 [1    ] o.Configuration.LanguageManagementConfig - Converted GoodHost (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-23 01:27:19,426 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-23 01:27:20,137 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: GoodHost.EntityFramework.GoodHostDbContext, GoodHost.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 01:27:21,780 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2020-04-23 01:27:21,960 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2020-04-23 01:27:22,056 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2020-04-23 01:27:22,141 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: GoodHost
+DEBUG 2020-04-23 01:27:22,212 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2020-04-23 01:27:22,463 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2020-04-23 01:27:22,554 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 11 classes define auto mapping attributes
+DEBUG 2020-04-23 01:27:22,554 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2020-04-23 01:27:22,566 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Sessions.Dto.UserLoginInfoDto
+DEBUG 2020-04-23 01:27:22,567 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Users.Dto.CreateUserDto
+DEBUG 2020-04-23 01:27:22,567 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Users.Dto.UpdateUserDto
+DEBUG 2020-04-23 01:27:22,567 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Users.Dto.UserDto
+DEBUG 2020-04-23 01:27:22,567 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Roles.Dto.PermissionDto
+DEBUG 2020-04-23 01:27:22,568 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2020-04-23 01:27:22,568 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.MultiTenancy.Dto.EditTenantDto
+DEBUG 2020-04-23 01:27:22,568 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.MultiTenancy.Dto.TenantDto
+DEBUG 2020-04-23 01:27:22,568 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Web.Models.Account.TenantChangeViewModel
+DEBUG 2020-04-23 01:27:22,568 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2020-04-23 01:27:27,319 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2020-04-23 01:27:27,321 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2020-04-23 01:27:27,322 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2020-04-23 01:27:27,323 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2020-04-23 01:27:27,324 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Configuration.IConfigurationAppService' with service name 'app/configuration'.
+DEBUG 2020-04-23 01:27:27,325 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Authorization.Accounts.IAccountAppService' with service name 'app/account'.
+ERROR 2020-04-23 01:27:36,301 [11   ] GoodHost.Web.Controllers.HomeController  - No language defined!
+Abp.AbpException: No language defined!
+   at Abp.Localization.MultiTenantLocalizationDictionaryProvider.GetDefaultDictionary()
+   at Abp.Localization.MultiTenantLocalizationDictionaryProvider.get_DefaultDictionary()
+   at Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource.GetStringOrNull(String name, CultureInfo culture, Boolean tryDefaults)
+   at Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource.GetString(String name)
+   at Abp.Authorization.AuthorizationHelper.Authorize(IEnumerable`1 authorizeAttributes)
+   at Abp.Authorization.AuthorizationHelper.CheckPermissions(MethodInfo methodInfo, Type type)
+   at Abp.Authorization.AuthorizationHelper.Authorize(MethodInfo methodInfo, Type type)
+   at Abp.Web.Mvc.Authorization.AbpMvcAuthorizeFilter.OnAuthorization(AuthorizationContext filterContext)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAuthorizationFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__0(AsyncCallback asyncCallback, Object asyncState)
+ERROR 2020-04-23 01:27:44,176 [13   ] GoodHost.Web.Controllers.HomeController  - No language defined!
+Abp.AbpException: No language defined!
+   at Abp.Localization.MultiTenantLocalizationDictionaryProvider.GetDefaultDictionary()
+   at Abp.Localization.MultiTenantLocalizationDictionaryProvider.get_DefaultDictionary()
+   at Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource.GetStringOrNull(String name, CultureInfo culture, Boolean tryDefaults)
+   at Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource.GetString(String name)
+   at Abp.Authorization.AuthorizationHelper.Authorize(IEnumerable`1 authorizeAttributes)
+   at Abp.Authorization.AuthorizationHelper.CheckPermissions(MethodInfo methodInfo, Type type)
+   at Abp.Authorization.AuthorizationHelper.Authorize(MethodInfo methodInfo, Type type)
+   at Abp.Web.Mvc.Authorization.AbpMvcAuthorizeFilter.OnAuthorization(AuthorizationContext filterContext)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAuthorizationFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__0(AsyncCallback asyncCallback, Object asyncState)
+ERROR 2020-04-23 01:27:49,640 [10   ] GoodHost.Web.Controllers.HomeController  - No language defined!
+Abp.AbpException: No language defined!
+   at Abp.Localization.MultiTenantLocalizationDictionaryProvider.GetDefaultDictionary()
+   at Abp.Localization.MultiTenantLocalizationDictionaryProvider.get_DefaultDictionary()
+   at Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource.GetStringOrNull(String name, CultureInfo culture, Boolean tryDefaults)
+   at Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource.GetString(String name)
+   at Abp.Authorization.AuthorizationHelper.Authorize(IEnumerable`1 authorizeAttributes)
+   at Abp.Authorization.AuthorizationHelper.CheckPermissions(MethodInfo methodInfo, Type type)
+   at Abp.Authorization.AuthorizationHelper.Authorize(MethodInfo methodInfo, Type type)
+   at Abp.Web.Mvc.Authorization.AbpMvcAuthorizeFilter.OnAuthorization(AuthorizationContext filterContext)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAuthorizationFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__0(AsyncCallback asyncCallback, Object asyncState)
+DEBUG 2020-04-23 01:38:53,731 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2020-04-23 01:38:53,746 [1    ] Abp.Modules.AbpModuleManager             - Found 17 ABP modules in total.
+DEBUG 2020-04-23 01:38:53,759 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.Web.GoodHostWebModule, GoodHost.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 01:38:53,762 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.GoodHostDataModule, GoodHost.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 01:38:53,763 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 01:38:53,763 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 01:38:53,763 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 01:38:53,763 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 01:38:53,764 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 01:38:53,764 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 01:38:53,765 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.GoodHostCoreModule, GoodHost.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 01:38:53,765 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.GoodHostApplicationModule, GoodHost.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 01:38:53,765 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 01:38:53,766 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.Api.GoodHostWebApiModule, GoodHost.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 01:38:53,766 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 01:38:53,766 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 01:38:53,767 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 01:38:53,767 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 01:38:53,767 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 01:38:53,774 [1    ] Abp.Modules.AbpModuleManager             - 17 modules loaded.
+DEBUG 2020-04-23 01:38:54,211 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-23 01:38:54,211 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-23 01:38:54,211 [1    ] o.Configuration.LanguageManagementConfig - Converted GoodHost (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-23 01:38:54,211 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-23 01:38:54,898 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: GoodHost.EntityFramework.GoodHostDbContext, GoodHost.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 01:38:58,699 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2020-04-23 01:38:58,886 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2020-04-23 01:38:58,986 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2020-04-23 01:38:59,041 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: GoodHost
+DEBUG 2020-04-23 01:38:59,102 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2020-04-23 01:38:59,343 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2020-04-23 01:38:59,482 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 11 classes define auto mapping attributes
+DEBUG 2020-04-23 01:38:59,482 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2020-04-23 01:38:59,491 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Sessions.Dto.UserLoginInfoDto
+DEBUG 2020-04-23 01:38:59,491 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Users.Dto.CreateUserDto
+DEBUG 2020-04-23 01:38:59,491 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Users.Dto.UpdateUserDto
+DEBUG 2020-04-23 01:38:59,492 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Users.Dto.UserDto
+DEBUG 2020-04-23 01:38:59,492 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Roles.Dto.PermissionDto
+DEBUG 2020-04-23 01:38:59,492 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2020-04-23 01:38:59,492 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.MultiTenancy.Dto.EditTenantDto
+DEBUG 2020-04-23 01:38:59,492 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.MultiTenancy.Dto.TenantDto
+DEBUG 2020-04-23 01:38:59,492 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Web.Models.Account.TenantChangeViewModel
+DEBUG 2020-04-23 01:38:59,492 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2020-04-23 01:39:03,646 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2020-04-23 01:39:03,650 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2020-04-23 01:39:03,653 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2020-04-23 01:39:03,657 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2020-04-23 01:39:03,661 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Configuration.IConfigurationAppService' with service name 'app/configuration'.
+DEBUG 2020-04-23 01:39:03,664 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Authorization.Accounts.IAccountAppService' with service name 'app/account'.
+WARN  2020-04-23 01:39:11,881 [10   ] Abp.Logging.LogHelper                    - Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   at Abp.Authorization.AuthorizationHelper.Authorize(IEnumerable`1 authorizeAttributes)
+   at Abp.Authorization.AuthorizationHelper.CheckPermissions(MethodInfo methodInfo, Type type)
+   at Abp.Authorization.AuthorizationHelper.Authorize(MethodInfo methodInfo, Type type)
+   at Abp.Web.Mvc.Authorization.AbpMvcAuthorizeFilter.OnAuthorization(AuthorizationContext filterContext)
+Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   at Abp.Authorization.AuthorizationHelper.Authorize(IEnumerable`1 authorizeAttributes)
+   at Abp.Authorization.AuthorizationHelper.CheckPermissions(MethodInfo methodInfo, Type type)
+   at Abp.Authorization.AuthorizationHelper.Authorize(MethodInfo methodInfo, Type type)
+   at Abp.Web.Mvc.Authorization.AbpMvcAuthorizeFilter.OnAuthorization(AuthorizationContext filterContext)
+WARN  2020-04-23 01:41:28,419 [10   ] odHost.Web.Controllers.AccountController - Login failed!
+Abp.UI.UserFriendlyException: Login failed!
+   at GoodHost.Web.Controllers.AccountController.<GetLoginResultAsync>d__13.MoveNext() in C:\Users\senid\Source\Repos\GoodHostProject4\src\GoodHost.Web\Controllers\AccountController.cs:line 130
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at GoodHost.Web.Controllers.AccountController.<Login>d__12.MoveNext() in C:\Users\senid\Source\Repos\GoodHostProject4\src\GoodHost.Web\Controllers\AccountController.cs:line 100
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Mvc.Async.TaskAsyncActionDescriptor.EndExecute(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass8_0.<BeginInvokeAsynchronousActionMethod>b__1(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_0.<InvokeActionMethodFilterAsynchronouslyRecursive>b__0()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_2.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_2.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_2.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_2.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass7_0.<BeginInvokeActionMethodWithFilters>b__1(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__4()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__1(IAsyncResult asyncResult)
