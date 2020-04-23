@@ -2451,3 +2451,991 @@ DEBUG 2020-04-23 22:05:31,352 [11   ] Abp.Web.SignalR.Hubs.AbpCommonHub        -
 DEBUG 2020-04-23 22:05:31,360 [11   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: f29662b9-2584-4a53-ab25-90dabcd0f9cf
 DEBUG 2020-04-23 22:05:49,444 [14   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 36ba30e5-1687-4fed-84d9-8a57ff9b0327
 DEBUG 2020-04-23 22:06:04,430 [8    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: fa5a32eb-0adf-4c22-aee7-7da15a829fb7
+DEBUG 2020-04-23 22:13:14,864 [14   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: f29662b9-2584-4a53-ab25-90dabcd0f9cf
+WARN  2020-04-23 22:15:08,950 [7    ] Abp.BackgroundJobs.BackgroundJobManager  - System.Data.Entity.Core.EntityException: The underlying provider failed on Open. ---> System.Data.SqlClient.SqlException: Execution Timeout Expired.  The timeout period elapsed prior to completion of the operation or the server is not responding. ---> System.ComponentModel.Win32Exception: The wait operation timed out
+   --- End of inner exception stack trace ---
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParserStateObject.ReadSniError(TdsParserStateObject stateObj, UInt32 error)
+   at System.Data.SqlClient.TdsParserStateObject.ReadSniSyncOverAsync()
+   at System.Data.SqlClient.TdsParserStateObject.TryReadNetworkPacket()
+   at System.Data.SqlClient.TdsParserStateObject.TryPrepareBuffer()
+   at System.Data.SqlClient.TdsParserStateObject.TryReadByte(Byte& value)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.TdsExecuteTransactionManagerRequest(Byte[] buffer, TransactionManagerRequestType request, String transactionName, TransactionManagerIsolationLevel isoLevel, Int32 timeout, SqlInternalTransaction transaction, TdsParserStateObject stateObj, Boolean isDelegateControlRequest)
+   at System.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransactionYukon(TransactionRequest transactionRequest, String transactionName, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   at System.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransaction(TransactionRequest transactionRequest, String name, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   at System.Data.SqlClient.SqlDelegatedTransaction.Initialize()
+   at System.Transactions.TransactionStatePSPEOperation.PSPEInitialize(InternalTransaction tx, IPromotableSinglePhaseNotification promotableSinglePhaseNotification, Guid promoterType)
+   at System.Transactions.TransactionStateActive.EnlistPromotableSinglePhase(InternalTransaction tx, IPromotableSinglePhaseNotification promotableSinglePhaseNotification, Transaction atomicTransaction, Guid promoterType)
+   at System.Transactions.Transaction.EnlistPromotableSinglePhase(IPromotableSinglePhaseNotification promotableSinglePhaseNotification, Guid promoterType)
+   at System.Transactions.Transaction.EnlistPromotableSinglePhase(IPromotableSinglePhaseNotification promotableSinglePhaseNotification)
+   at System.Data.SqlClient.SqlInternalConnection.EnlistNonNull(Transaction tx)
+   at System.Data.SqlClient.SqlInternalConnection.Enlist(Transaction tx)
+   at System.Data.SqlClient.SqlInternalConnectionTds.Activate(Transaction transaction)
+   at System.Data.ProviderBase.DbConnectionInternal.ActivateConnection(Transaction transaction)
+   at System.Data.ProviderBase.DbConnectionPool.PrepareConnection(DbConnection owningObject, DbConnectionInternal obj, Transaction transaction)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at System.Data.Entity.Infrastructure.Interception.DbConnectionDispatcher.<>c.<Open>b__13_0(DbConnection t, DbConnectionInterceptionContext c)
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext](TTarget target, Action`2 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbConnectionDispatcher.Open(DbConnection connection, DbInterceptionContext interceptionContext)
+   at System.Data.Entity.Core.EntityClient.EntityConnection.<Open>b__55_0()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.<>c__DisplayClass2_0.<Execute>b__0()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute(Action operation)
+   at System.Data.Entity.Core.EntityClient.EntityConnection.Open()
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.EntityConnection.Open()
+   at System.Data.Entity.Core.Objects.ObjectContext.EnsureConnection(Boolean shouldMonitorTransactions)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass41_0.<GetResults>b__0()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<System.Collections.Generic.IEnumerable<T>.GetEnumerator>b__31_0()
+   at System.Data.Entity.Internal.LazyEnumerator`1.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Abp.BackgroundJobs.BackgroundJobStore.GetWaitingJobs(Int32 maxResultCount)
+   at Castle.Proxies.BackgroundJobStoreProxy.GetWaitingJobs_callback(Int32 maxResultCount)
+   at Castle.Proxies.Invocations.BackgroundJobStore_GetWaitingJobs.InvokeMethodOnTarget()
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Abp.Domain.Uow.UnitOfWorkInterceptor.InterceptSynchronous(IInvocation invocation)
+   at Castle.DynamicProxy.AsyncDeterminationInterceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.BackgroundJobStoreProxy.GetWaitingJobs(Int32 maxResultCount)
+   at Abp.BackgroundJobs.BackgroundJobManager.DoWork()
+   at Castle.Proxies.BackgroundJobManagerProxy.DoWork_callback()
+   at Castle.Proxies.Invocations.BackgroundJobManager_DoWork.InvokeMethodOnTarget()
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Abp.Domain.Uow.UnitOfWorkInterceptor.InterceptSynchronous(IInvocation invocation)
+   at Castle.DynamicProxy.AsyncDeterminationInterceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.BackgroundJobManagerProxy.DoWork()
+   at Abp.Threading.BackgroundWorkers.PeriodicBackgroundWorkerBase.Timer_Elapsed(Object sender, EventArgs e)
+System.Data.Entity.Core.EntityException: The underlying provider failed on Open. ---> System.Data.SqlClient.SqlException: Execution Timeout Expired.  The timeout period elapsed prior to completion of the operation or the server is not responding. ---> System.ComponentModel.Win32Exception: The wait operation timed out
+   --- End of inner exception stack trace ---
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParserStateObject.ReadSniError(TdsParserStateObject stateObj, UInt32 error)
+   at System.Data.SqlClient.TdsParserStateObject.ReadSniSyncOverAsync()
+   at System.Data.SqlClient.TdsParserStateObject.TryReadNetworkPacket()
+   at System.Data.SqlClient.TdsParserStateObject.TryPrepareBuffer()
+   at System.Data.SqlClient.TdsParserStateObject.TryReadByte(Byte& value)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.TdsExecuteTransactionManagerRequest(Byte[] buffer, TransactionManagerRequestType request, String transactionName, TransactionManagerIsolationLevel isoLevel, Int32 timeout, SqlInternalTransaction transaction, TdsParserStateObject stateObj, Boolean isDelegateControlRequest)
+   at System.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransactionYukon(TransactionRequest transactionRequest, String transactionName, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   at System.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransaction(TransactionRequest transactionRequest, String name, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   at System.Data.SqlClient.SqlDelegatedTransaction.Initialize()
+   at System.Transactions.TransactionStatePSPEOperation.PSPEInitialize(InternalTransaction tx, IPromotableSinglePhaseNotification promotableSinglePhaseNotification, Guid promoterType)
+   at System.Transactions.TransactionStateActive.EnlistPromotableSinglePhase(InternalTransaction tx, IPromotableSinglePhaseNotification promotableSinglePhaseNotification, Transaction atomicTransaction, Guid promoterType)
+   at System.Transactions.Transaction.EnlistPromotableSinglePhase(IPromotableSinglePhaseNotification promotableSinglePhaseNotification, Guid promoterType)
+   at System.Transactions.Transaction.EnlistPromotableSinglePhase(IPromotableSinglePhaseNotification promotableSinglePhaseNotification)
+   at System.Data.SqlClient.SqlInternalConnection.EnlistNonNull(Transaction tx)
+   at System.Data.SqlClient.SqlInternalConnection.Enlist(Transaction tx)
+   at System.Data.SqlClient.SqlInternalConnectionTds.Activate(Transaction transaction)
+   at System.Data.ProviderBase.DbConnectionInternal.ActivateConnection(Transaction transaction)
+   at System.Data.ProviderBase.DbConnectionPool.PrepareConnection(DbConnection owningObject, DbConnectionInternal obj, Transaction transaction)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at System.Data.Entity.Infrastructure.Interception.DbConnectionDispatcher.<>c.<Open>b__13_0(DbConnection t, DbConnectionInterceptionContext c)
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext](TTarget target, Action`2 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbConnectionDispatcher.Open(DbConnection connection, DbInterceptionContext interceptionContext)
+   at System.Data.Entity.Core.EntityClient.EntityConnection.<Open>b__55_0()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.<>c__DisplayClass2_0.<Execute>b__0()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute(Action operation)
+   at System.Data.Entity.Core.EntityClient.EntityConnection.Open()
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.EntityConnection.Open()
+   at System.Data.Entity.Core.Objects.ObjectContext.EnsureConnection(Boolean shouldMonitorTransactions)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass41_0.<GetResults>b__0()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<System.Collections.Generic.IEnumerable<T>.GetEnumerator>b__31_0()
+   at System.Data.Entity.Internal.LazyEnumerator`1.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Abp.BackgroundJobs.BackgroundJobStore.GetWaitingJobs(Int32 maxResultCount)
+   at Castle.Proxies.BackgroundJobStoreProxy.GetWaitingJobs_callback(Int32 maxResultCount)
+   at Castle.Proxies.Invocations.BackgroundJobStore_GetWaitingJobs.InvokeMethodOnTarget()
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Abp.Domain.Uow.UnitOfWorkInterceptor.InterceptSynchronous(IInvocation invocation)
+   at Castle.DynamicProxy.AsyncDeterminationInterceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.BackgroundJobStoreProxy.GetWaitingJobs(Int32 maxResultCount)
+   at Abp.BackgroundJobs.BackgroundJobManager.DoWork()
+   at Castle.Proxies.BackgroundJobManagerProxy.DoWork_callback()
+   at Castle.Proxies.Invocations.BackgroundJobManager_DoWork.InvokeMethodOnTarget()
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Abp.Domain.Uow.UnitOfWorkInterceptor.InterceptSynchronous(IInvocation invocation)
+   at Castle.DynamicProxy.AsyncDeterminationInterceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.BackgroundJobManagerProxy.DoWork()
+   at Abp.Threading.BackgroundWorkers.PeriodicBackgroundWorkerBase.Timer_Elapsed(Object sender, EventArgs e)
+DEBUG 2020-04-23 22:19:49,195 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2020-04-23 22:19:50,615 [1    ] Abp.Modules.AbpModuleManager             - Found 17 ABP modules in total.
+DEBUG 2020-04-23 22:19:50,630 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.Web.GoodHostWebModule, GoodHost.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 22:19:50,634 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.GoodHostDataModule, GoodHost.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 22:19:50,635 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 22:19:50,635 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 22:19:50,636 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 22:19:50,637 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 22:19:50,638 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 22:19:50,638 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 22:19:50,639 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.GoodHostCoreModule, GoodHost.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 22:19:50,639 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.GoodHostApplicationModule, GoodHost.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 22:19:50,639 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 22:19:50,640 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.Api.GoodHostWebApiModule, GoodHost.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 22:19:50,640 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 22:19:50,640 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 22:19:50,641 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 22:19:50,641 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 22:19:50,641 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 22:19:50,647 [1    ] Abp.Modules.AbpModuleManager             - 17 modules loaded.
+DEBUG 2020-04-23 22:19:51,843 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-23 22:19:51,843 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-23 22:19:51,843 [1    ] o.Configuration.LanguageManagementConfig - Converted GoodHost (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-23 22:19:51,843 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-23 22:19:52,663 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: GoodHost.EntityFramework.GoodHostDbContext, GoodHost.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 22:19:55,080 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2020-04-23 22:19:55,183 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2020-04-23 22:19:55,208 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2020-04-23 22:19:55,218 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: GoodHost
+DEBUG 2020-04-23 22:19:55,230 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2020-04-23 22:19:55,489 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2020-04-23 22:19:55,594 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 11 classes define auto mapping attributes
+DEBUG 2020-04-23 22:19:55,594 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2020-04-23 22:19:55,603 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Sessions.Dto.UserLoginInfoDto
+DEBUG 2020-04-23 22:19:55,604 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Users.Dto.CreateUserDto
+DEBUG 2020-04-23 22:19:55,605 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Users.Dto.UpdateUserDto
+DEBUG 2020-04-23 22:19:55,605 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Users.Dto.UserDto
+DEBUG 2020-04-23 22:19:55,605 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Roles.Dto.PermissionDto
+DEBUG 2020-04-23 22:19:55,605 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2020-04-23 22:19:55,606 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.MultiTenancy.Dto.EditTenantDto
+DEBUG 2020-04-23 22:19:55,606 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.MultiTenancy.Dto.TenantDto
+DEBUG 2020-04-23 22:19:55,606 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Web.Models.Account.TenantChangeViewModel
+DEBUG 2020-04-23 22:19:55,606 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2020-04-23 22:19:59,489 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2020-04-23 22:19:59,490 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2020-04-23 22:19:59,492 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2020-04-23 22:19:59,493 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2020-04-23 22:19:59,494 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Configuration.IConfigurationAppService' with service name 'app/configuration'.
+DEBUG 2020-04-23 22:19:59,496 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Authorization.Accounts.IAccountAppService' with service name 'app/account'.
+DEBUG 2020-04-23 22:20:20,866 [7    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"84b0bfda-3b3e-4864-9608-e10ea77b8e8f","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2020-04-23T22:20:20.8576109+02:00","Properties":{}}
+DEBUG 2020-04-23 22:20:20,935 [6    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 84b0bfda-3b3e-4864-9608-e10ea77b8e8f
+DEBUG 2020-04-23 22:20:40,479 [19   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"9b0aa099-2c43-44a5-a417-ae9e07d1aee3","IpAddress":"::1","TenantId":null,"UserId":5,"ConnectTime":"2020-04-23T22:20:40.4796661+02:00","Properties":{}}
+DEBUG 2020-04-23 22:20:40,498 [17   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 9b0aa099-2c43-44a5-a417-ae9e07d1aee3
+DEBUG 2020-04-23 22:21:00,689 [9    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 84b0bfda-3b3e-4864-9608-e10ea77b8e8f
+DEBUG 2020-04-23 22:34:52,191 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2020-04-23 22:34:53,945 [1    ] Abp.Modules.AbpModuleManager             - Found 17 ABP modules in total.
+DEBUG 2020-04-23 22:34:53,983 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.Web.GoodHostWebModule, GoodHost.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 22:34:53,986 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.GoodHostDataModule, GoodHost.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 22:34:53,987 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 22:34:53,987 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 22:34:53,987 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 22:34:53,988 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 22:34:53,989 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 22:34:53,989 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 22:34:53,989 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.GoodHostCoreModule, GoodHost.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 22:34:53,989 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.GoodHostApplicationModule, GoodHost.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 22:34:53,990 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 22:34:53,990 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.Api.GoodHostWebApiModule, GoodHost.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 22:34:53,991 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 22:34:53,991 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 22:34:53,991 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 22:34:53,992 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 22:34:53,992 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 22:34:54,006 [1    ] Abp.Modules.AbpModuleManager             - 17 modules loaded.
+DEBUG 2020-04-23 22:34:55,121 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-23 22:34:55,122 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-23 22:34:55,122 [1    ] o.Configuration.LanguageManagementConfig - Converted GoodHost (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-23 22:34:55,122 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-23 22:34:55,778 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: GoodHost.EntityFramework.GoodHostDbContext, GoodHost.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 22:34:57,561 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2020-04-23 22:34:57,678 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2020-04-23 22:34:57,701 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2020-04-23 22:34:57,709 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: GoodHost
+DEBUG 2020-04-23 22:34:57,720 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2020-04-23 22:34:57,913 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2020-04-23 22:34:57,999 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 11 classes define auto mapping attributes
+DEBUG 2020-04-23 22:34:57,999 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2020-04-23 22:34:58,007 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Sessions.Dto.UserLoginInfoDto
+DEBUG 2020-04-23 22:34:58,008 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Users.Dto.CreateUserDto
+DEBUG 2020-04-23 22:34:58,008 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Users.Dto.UpdateUserDto
+DEBUG 2020-04-23 22:34:58,008 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Users.Dto.UserDto
+DEBUG 2020-04-23 22:34:58,009 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Roles.Dto.PermissionDto
+DEBUG 2020-04-23 22:34:58,009 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2020-04-23 22:34:58,009 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.MultiTenancy.Dto.EditTenantDto
+DEBUG 2020-04-23 22:34:58,009 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.MultiTenancy.Dto.TenantDto
+DEBUG 2020-04-23 22:34:58,009 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Web.Models.Account.TenantChangeViewModel
+DEBUG 2020-04-23 22:34:58,009 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2020-04-23 22:35:02,064 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2020-04-23 22:35:02,066 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2020-04-23 22:35:02,069 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2020-04-23 22:35:02,071 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2020-04-23 22:35:02,072 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Configuration.IConfigurationAppService' with service name 'app/configuration'.
+DEBUG 2020-04-23 22:35:02,073 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Authorization.Accounts.IAccountAppService' with service name 'app/account'.
+DEBUG 2020-04-23 22:35:27,884 [7    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"40557b2b-4ca6-4e56-a20a-e5e5eb1a72a2","IpAddress":"::1","TenantId":null,"UserId":5,"ConnectTime":"2020-04-23T22:35:27.8705299+02:00","Properties":{}}
+DEBUG 2020-04-23 22:35:27,938 [8    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 40557b2b-4ca6-4e56-a20a-e5e5eb1a72a2
+DEBUG 2020-04-23 22:36:35,889 [26   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"e7e93b19-8ded-49d6-a386-553054178a29","IpAddress":"::1","TenantId":null,"UserId":5,"ConnectTime":"2020-04-23T22:36:35.8895779+02:00","Properties":{}}
+DEBUG 2020-04-23 22:36:35,980 [11   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: e7e93b19-8ded-49d6-a386-553054178a29
+DEBUG 2020-04-23 22:37:03,824 [11   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"55fee52f-a706-4c45-8656-910394023762","IpAddress":"::1","TenantId":null,"UserId":5,"ConnectTime":"2020-04-23T22:37:03.8244463+02:00","Properties":{}}
+DEBUG 2020-04-23 22:37:03,841 [17   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 55fee52f-a706-4c45-8656-910394023762
+DEBUG 2020-04-23 22:37:08,201 [15   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 40557b2b-4ca6-4e56-a20a-e5e5eb1a72a2
+DEBUG 2020-04-23 22:37:38,256 [15   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: e7e93b19-8ded-49d6-a386-553054178a29
+DEBUG 2020-04-23 22:38:40,067 [11   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 55fee52f-a706-4c45-8656-910394023762
+DEBUG 2020-04-23 22:38:40,543 [18   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"f66a05cc-28ca-4dfc-beee-db987cc5ce8f","IpAddress":"::1","TenantId":null,"UserId":5,"ConnectTime":"2020-04-23T22:38:40.5437473+02:00","Properties":{}}
+DEBUG 2020-04-23 22:38:40,559 [11   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: f66a05cc-28ca-4dfc-beee-db987cc5ce8f
+DEBUG 2020-04-23 22:38:56,290 [14   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"2be3ae39-ef1b-4316-be39-dcf01695e0e5","IpAddress":"::1","TenantId":null,"UserId":5,"ConnectTime":"2020-04-23T22:38:56.2904365+02:00","Properties":{}}
+DEBUG 2020-04-23 22:38:56,311 [11   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 2be3ae39-ef1b-4316-be39-dcf01695e0e5
+DEBUG 2020-04-23 22:39:16,401 [18   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"279ea65b-ad7d-4dd2-bd65-c49ccb23eeec","IpAddress":"::1","TenantId":null,"UserId":5,"ConnectTime":"2020-04-23T22:39:16.4015453+02:00","Properties":{}}
+DEBUG 2020-04-23 22:39:16,410 [15   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 279ea65b-ad7d-4dd2-bd65-c49ccb23eeec
+DEBUG 2020-04-23 22:39:28,449 [33   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: f66a05cc-28ca-4dfc-beee-db987cc5ce8f
+DEBUG 2020-04-23 22:39:48,474 [36   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 2be3ae39-ef1b-4316-be39-dcf01695e0e5
+DEBUG 2020-04-23 22:39:48,571 [32   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"455498ab-6d2c-4985-93e5-f3b47506e550","IpAddress":"::1","TenantId":null,"UserId":5,"ConnectTime":"2020-04-23T22:39:48.5718026+02:00","Properties":{}}
+DEBUG 2020-04-23 22:39:48,585 [35   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 455498ab-6d2c-4985-93e5-f3b47506e550
+DEBUG 2020-04-23 22:40:18,518 [33   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 279ea65b-ad7d-4dd2-bd65-c49ccb23eeec
+DEBUG 2020-04-23 22:40:20,693 [34   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"64fe3751-104d-44be-b12b-7ffdf301d3dd","IpAddress":"::1","TenantId":null,"UserId":5,"ConnectTime":"2020-04-23T22:40:20.6937308+02:00","Properties":{}}
+DEBUG 2020-04-23 22:40:20,711 [11   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 64fe3751-104d-44be-b12b-7ffdf301d3dd
+DEBUG 2020-04-23 22:40:53,572 [36   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 455498ab-6d2c-4985-93e5-f3b47506e550
+DEBUG 2020-04-23 22:42:31,833 [41   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"90894155-a69e-4d64-b7d3-5dc1beb27764","IpAddress":"::1","TenantId":null,"UserId":5,"ConnectTime":"2020-04-23T22:42:31.8333277+02:00","Properties":{}}
+DEBUG 2020-04-23 22:42:31,849 [34   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 90894155-a69e-4d64-b7d3-5dc1beb27764
+DEBUG 2020-04-23 22:43:03,882 [23   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 64fe3751-104d-44be-b12b-7ffdf301d3dd
+DEBUG 2020-04-23 22:44:44,775 [23   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"c4820132-1ba3-477c-adc8-780d29acad61","IpAddress":"::1","TenantId":null,"UserId":5,"ConnectTime":"2020-04-23T22:44:44.7750626+02:00","Properties":{}}
+DEBUG 2020-04-23 22:44:44,791 [37   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: c4820132-1ba3-477c-adc8-780d29acad61
+DEBUG 2020-04-23 22:45:18,331 [25   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"8715a5f1-ccc7-41a4-a249-cd0b28516f65","IpAddress":"::1","TenantId":null,"UserId":5,"ConnectTime":"2020-04-23T22:45:18.3316525+02:00","Properties":{}}
+DEBUG 2020-04-23 22:45:18,339 [36   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 8715a5f1-ccc7-41a4-a249-cd0b28516f65
+DEBUG 2020-04-23 22:45:19,043 [24   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 90894155-a69e-4d64-b7d3-5dc1beb27764
+DEBUG 2020-04-23 22:45:49,093 [24   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: c4820132-1ba3-477c-adc8-780d29acad61
+DEBUG 2020-04-23 22:46:13,711 [37   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"54b86261-539e-4c1d-9e74-79ea05afc466","IpAddress":"::1","TenantId":null,"UserId":5,"ConnectTime":"2020-04-23T22:46:13.7118474+02:00","Properties":{}}
+DEBUG 2020-04-23 22:46:13,720 [23   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 54b86261-539e-4c1d-9e74-79ea05afc466
+DEBUG 2020-04-23 22:46:44,264 [41   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 8715a5f1-ccc7-41a4-a249-cd0b28516f65
+WARN  2020-04-23 22:48:00,408 [37   ] Abp.BackgroundJobs.BackgroundJobManager  - System.Data.Entity.Core.EntityCommandExecutionException: An error occurred while executing the command definition. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Execution Timeout Expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+The request failed to run because the batch is aborted, this can be caused by abort signal sent from client, or another request is running in the same session, which makes the session busy. ---> System.ComponentModel.Win32Exception: The wait operation timed out
+   --- End of inner exception stack trace ---
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.<>c.<Reader>b__6_0(DbCommand t, DbCommandInterceptionContext`1 c)
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   at System.Data.Entity.Internal.InterceptableDbCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   at System.Data.Entity.Core.Objects.Internal.ObjectQueryExecutionPlan.Execute[TResultType](ObjectContext context, ObjectParameterCollection parameterValues)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass41_0.<GetResults>b__1()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass41_0.<GetResults>b__0()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<System.Collections.Generic.IEnumerable<T>.GetEnumerator>b__31_0()
+   at System.Data.Entity.Internal.LazyEnumerator`1.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Abp.BackgroundJobs.BackgroundJobStore.GetWaitingJobs(Int32 maxResultCount)
+   at Castle.Proxies.BackgroundJobStoreProxy.GetWaitingJobs_callback(Int32 maxResultCount)
+   at Castle.Proxies.Invocations.BackgroundJobStore_GetWaitingJobs.InvokeMethodOnTarget()
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Abp.Domain.Uow.UnitOfWorkInterceptor.InterceptSynchronous(IInvocation invocation)
+   at Castle.DynamicProxy.AsyncDeterminationInterceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.BackgroundJobStoreProxy.GetWaitingJobs(Int32 maxResultCount)
+   at Abp.BackgroundJobs.BackgroundJobManager.DoWork()
+   at Castle.Proxies.BackgroundJobManagerProxy.DoWork_callback()
+   at Castle.Proxies.Invocations.BackgroundJobManager_DoWork.InvokeMethodOnTarget()
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Abp.Domain.Uow.UnitOfWorkInterceptor.InterceptSynchronous(IInvocation invocation)
+   at Castle.DynamicProxy.AsyncDeterminationInterceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.BackgroundJobManagerProxy.DoWork()
+   at Abp.Threading.BackgroundWorkers.PeriodicBackgroundWorkerBase.Timer_Elapsed(Object sender, EventArgs e)
+System.Data.Entity.Core.EntityCommandExecutionException: An error occurred while executing the command definition. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Execution Timeout Expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+The request failed to run because the batch is aborted, this can be caused by abort signal sent from client, or another request is running in the same session, which makes the session busy. ---> System.ComponentModel.Win32Exception: The wait operation timed out
+   --- End of inner exception stack trace ---
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.<>c.<Reader>b__6_0(DbCommand t, DbCommandInterceptionContext`1 c)
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   at System.Data.Entity.Internal.InterceptableDbCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   at System.Data.Entity.Core.Objects.Internal.ObjectQueryExecutionPlan.Execute[TResultType](ObjectContext context, ObjectParameterCollection parameterValues)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass41_0.<GetResults>b__1()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass41_0.<GetResults>b__0()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<System.Collections.Generic.IEnumerable<T>.GetEnumerator>b__31_0()
+   at System.Data.Entity.Internal.LazyEnumerator`1.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Abp.BackgroundJobs.BackgroundJobStore.GetWaitingJobs(Int32 maxResultCount)
+   at Castle.Proxies.BackgroundJobStoreProxy.GetWaitingJobs_callback(Int32 maxResultCount)
+   at Castle.Proxies.Invocations.BackgroundJobStore_GetWaitingJobs.InvokeMethodOnTarget()
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Abp.Domain.Uow.UnitOfWorkInterceptor.InterceptSynchronous(IInvocation invocation)
+   at Castle.DynamicProxy.AsyncDeterminationInterceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.BackgroundJobStoreProxy.GetWaitingJobs(Int32 maxResultCount)
+   at Abp.BackgroundJobs.BackgroundJobManager.DoWork()
+   at Castle.Proxies.BackgroundJobManagerProxy.DoWork_callback()
+   at Castle.Proxies.Invocations.BackgroundJobManager_DoWork.InvokeMethodOnTarget()
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Abp.Domain.Uow.UnitOfWorkInterceptor.InterceptSynchronous(IInvocation invocation)
+   at Castle.DynamicProxy.AsyncDeterminationInterceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.BackgroundJobManagerProxy.DoWork()
+   at Abp.Threading.BackgroundWorkers.PeriodicBackgroundWorkerBase.Timer_Elapsed(Object sender, EventArgs e)
+DEBUG 2020-04-23 22:48:35,212 [25   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"7473cb79-e799-46a7-95ea-ed107166039f","IpAddress":"::1","TenantId":null,"UserId":5,"ConnectTime":"2020-04-23T22:48:35.2125111+02:00","Properties":{}}
+DEBUG 2020-04-23 22:48:35,231 [23   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 7473cb79-e799-46a7-95ea-ed107166039f
+DEBUG 2020-04-23 22:48:50,675 [23   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"4c3cad29-5a89-4479-932b-57fa3aa60f27","IpAddress":"::1","TenantId":null,"UserId":5,"ConnectTime":"2020-04-23T22:48:50.6751603+02:00","Properties":{}}
+DEBUG 2020-04-23 22:48:50,682 [25   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 4c3cad29-5a89-4479-932b-57fa3aa60f27
+DEBUG 2020-04-23 22:49:09,505 [36   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 54b86261-539e-4c1d-9e74-79ea05afc466
+DEBUG 2020-04-23 22:49:24,507 [25   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 7473cb79-e799-46a7-95ea-ed107166039f
+DEBUG 2020-04-23 22:49:26,296 [36   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 4c3cad29-5a89-4479-932b-57fa3aa60f27
+DEBUG 2020-04-23 22:49:26,679 [25   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"0f0567db-1ce0-4ade-bb0a-69ee922e5344","IpAddress":"::1","TenantId":null,"UserId":5,"ConnectTime":"2020-04-23T22:49:26.6790623+02:00","Properties":{}}
+DEBUG 2020-04-23 22:49:26,694 [37   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 0f0567db-1ce0-4ade-bb0a-69ee922e5344
+DEBUG 2020-04-23 22:49:38,291 [36   ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2020-04-23 22:49:38,295 [36   ] Abp.BackgroundJobs.BackgroundJobManager  - Stop background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2020-04-23 22:49:38,300 [36   ] Abp.BackgroundJobs.BackgroundJobManager  - WaitToStop background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2020-04-23 22:49:38,300 [36   ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2020-04-23 22:49:44,026 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2020-04-23 22:49:44,859 [1    ] Abp.Modules.AbpModuleManager             - Found 17 ABP modules in total.
+DEBUG 2020-04-23 22:49:44,868 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.Web.GoodHostWebModule, GoodHost.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 22:49:44,869 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.GoodHostDataModule, GoodHost.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 22:49:44,869 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 22:49:44,869 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 22:49:44,869 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 22:49:44,870 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 22:49:44,870 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 22:49:44,870 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 22:49:44,871 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.GoodHostCoreModule, GoodHost.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 22:49:44,871 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.GoodHostApplicationModule, GoodHost.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 22:49:44,871 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 22:49:44,871 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.Api.GoodHostWebApiModule, GoodHost.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 22:49:44,872 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 22:49:44,872 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 22:49:44,872 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 22:49:44,872 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 22:49:44,872 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 22:49:44,876 [1    ] Abp.Modules.AbpModuleManager             - 17 modules loaded.
+DEBUG 2020-04-23 22:49:45,599 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-23 22:49:45,599 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-23 22:49:45,599 [1    ] o.Configuration.LanguageManagementConfig - Converted GoodHost (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-23 22:49:45,599 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-23 22:49:46,202 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: GoodHost.EntityFramework.GoodHostDbContext, GoodHost.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 22:49:48,151 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2020-04-23 22:49:48,170 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2020-04-23 22:49:48,186 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2020-04-23 22:49:48,193 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: GoodHost
+DEBUG 2020-04-23 22:49:48,202 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2020-04-23 22:49:48,442 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2020-04-23 22:49:48,483 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 11 classes define auto mapping attributes
+DEBUG 2020-04-23 22:49:48,483 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2020-04-23 22:49:48,484 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Sessions.Dto.UserLoginInfoDto
+DEBUG 2020-04-23 22:49:48,485 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Users.Dto.CreateUserDto
+DEBUG 2020-04-23 22:49:48,485 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Users.Dto.UpdateUserDto
+DEBUG 2020-04-23 22:49:48,485 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Users.Dto.UserDto
+DEBUG 2020-04-23 22:49:48,485 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Roles.Dto.PermissionDto
+DEBUG 2020-04-23 22:49:48,485 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2020-04-23 22:49:48,486 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.MultiTenancy.Dto.EditTenantDto
+DEBUG 2020-04-23 22:49:48,486 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.MultiTenancy.Dto.TenantDto
+DEBUG 2020-04-23 22:49:48,486 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Web.Models.Account.TenantChangeViewModel
+DEBUG 2020-04-23 22:49:48,486 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2020-04-23 22:49:52,161 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2020-04-23 22:49:52,163 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2020-04-23 22:49:52,164 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2020-04-23 22:49:52,166 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2020-04-23 22:49:52,167 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Configuration.IConfigurationAppService' with service name 'app/configuration'.
+DEBUG 2020-04-23 22:49:52,168 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Authorization.Accounts.IAccountAppService' with service name 'app/account'.
+DEBUG 2020-04-23 22:50:02,515 [36   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected (on reconnected event): {"ConnectionId":"0f0567db-1ce0-4ade-bb0a-69ee922e5344","IpAddress":null,"TenantId":null,"UserId":5,"ConnectTime":"2020-04-23T22:50:02.4575688+02:00","Properties":{}}
+DEBUG 2020-04-23 22:50:07,974 [23   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"cc7cb4b2-0ee0-46f8-bac4-4a06eea8228f","IpAddress":"::1","TenantId":null,"UserId":5,"ConnectTime":"2020-04-23T22:50:07.974389+02:00","Properties":{}}
+DEBUG 2020-04-23 22:50:08,022 [37   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: cc7cb4b2-0ee0-46f8-bac4-4a06eea8228f
+DEBUG 2020-04-23 22:50:42,414 [41   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 0f0567db-1ce0-4ade-bb0a-69ee922e5344
+DEBUG 2020-04-23 22:52:23,506 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2020-04-23 22:52:25,389 [1    ] Abp.Modules.AbpModuleManager             - Found 17 ABP modules in total.
+DEBUG 2020-04-23 22:52:25,405 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.Web.GoodHostWebModule, GoodHost.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 22:52:25,406 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.GoodHostDataModule, GoodHost.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 22:52:25,406 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 22:52:25,407 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 22:52:25,407 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 22:52:25,407 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 22:52:25,408 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 22:52:25,410 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 22:52:25,413 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.GoodHostCoreModule, GoodHost.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 22:52:25,413 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.GoodHostApplicationModule, GoodHost.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 22:52:25,414 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 22:52:25,414 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.Api.GoodHostWebApiModule, GoodHost.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 22:52:25,414 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 22:52:25,415 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 22:52:25,415 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 22:52:25,415 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 22:52:25,415 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 22:52:25,421 [1    ] Abp.Modules.AbpModuleManager             - 17 modules loaded.
+DEBUG 2020-04-23 22:52:26,632 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-23 22:52:26,632 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-23 22:52:26,632 [1    ] o.Configuration.LanguageManagementConfig - Converted GoodHost (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-23 22:52:26,632 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-23 22:52:27,867 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: GoodHost.EntityFramework.GoodHostDbContext, GoodHost.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 22:52:30,576 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2020-04-23 22:52:30,631 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2020-04-23 22:52:30,659 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2020-04-23 22:52:30,671 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: GoodHost
+DEBUG 2020-04-23 22:52:30,689 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2020-04-23 22:52:31,029 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2020-04-23 22:52:31,123 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 11 classes define auto mapping attributes
+DEBUG 2020-04-23 22:52:31,123 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2020-04-23 22:52:31,126 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Sessions.Dto.UserLoginInfoDto
+DEBUG 2020-04-23 22:52:31,128 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Users.Dto.CreateUserDto
+DEBUG 2020-04-23 22:52:31,128 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Users.Dto.UpdateUserDto
+DEBUG 2020-04-23 22:52:31,129 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Users.Dto.UserDto
+DEBUG 2020-04-23 22:52:31,129 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Roles.Dto.PermissionDto
+DEBUG 2020-04-23 22:52:31,129 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2020-04-23 22:52:31,130 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.MultiTenancy.Dto.EditTenantDto
+DEBUG 2020-04-23 22:52:31,130 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.MultiTenancy.Dto.TenantDto
+DEBUG 2020-04-23 22:52:31,131 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Web.Models.Account.TenantChangeViewModel
+DEBUG 2020-04-23 22:52:31,131 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2020-04-23 22:52:35,654 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2020-04-23 22:52:35,656 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2020-04-23 22:52:35,658 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2020-04-23 22:52:35,660 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2020-04-23 22:52:35,662 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Configuration.IConfigurationAppService' with service name 'app/configuration'.
+DEBUG 2020-04-23 22:52:35,665 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Authorization.Accounts.IAccountAppService' with service name 'app/account'.
+WARN  2020-04-23 22:52:48,442 [7    ] Abp.Logging.LogHelper                    - Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   at Abp.Authorization.AuthorizationHelper.Authorize(IEnumerable`1 authorizeAttributes)
+   at Abp.Authorization.AuthorizationHelper.CheckPermissions(MethodInfo methodInfo, Type type)
+   at Abp.Authorization.AuthorizationHelper.Authorize(MethodInfo methodInfo, Type type)
+   at Abp.Web.Mvc.Authorization.AbpMvcAuthorizeFilter.OnAuthorization(AuthorizationContext filterContext)
+Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   at Abp.Authorization.AuthorizationHelper.Authorize(IEnumerable`1 authorizeAttributes)
+   at Abp.Authorization.AuthorizationHelper.CheckPermissions(MethodInfo methodInfo, Type type)
+   at Abp.Authorization.AuthorizationHelper.Authorize(MethodInfo methodInfo, Type type)
+   at Abp.Web.Mvc.Authorization.AbpMvcAuthorizeFilter.OnAuthorization(AuthorizationContext filterContext)
+DEBUG 2020-04-23 22:55:24,080 [18   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"199c78a4-d869-4ea2-a112-d8813e835d32","IpAddress":"::1","TenantId":null,"UserId":5,"ConnectTime":"2020-04-23T22:55:24.066768+02:00","Properties":{}}
+DEBUG 2020-04-23 22:55:24,137 [6    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 199c78a4-d869-4ea2-a112-d8813e835d32
+DEBUG 2020-04-23 22:55:47,360 [6    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"e86a2b17-26fd-4c7e-8fce-a2b19906dfd7","IpAddress":"::1","TenantId":null,"UserId":5,"ConnectTime":"2020-04-23T22:55:47.360866+02:00","Properties":{}}
+DEBUG 2020-04-23 22:55:47,375 [6    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: e86a2b17-26fd-4c7e-8fce-a2b19906dfd7
+DEBUG 2020-04-23 22:56:18,864 [18   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 199c78a4-d869-4ea2-a112-d8813e835d32
+DEBUG 2020-04-23 22:57:56,570 [22   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"f1099839-e83c-4c24-b851-2e9dd515638d","IpAddress":"::1","TenantId":null,"UserId":5,"ConnectTime":"2020-04-23T22:57:56.5703896+02:00","Properties":{}}
+DEBUG 2020-04-23 22:57:56,588 [21   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: f1099839-e83c-4c24-b851-2e9dd515638d
+DEBUG 2020-04-23 22:58:19,554 [22   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"d56f18b0-2ac6-435a-a54d-caa443e37012","IpAddress":"::1","TenantId":null,"UserId":5,"ConnectTime":"2020-04-23T22:58:19.5548716+02:00","Properties":{}}
+DEBUG 2020-04-23 22:58:19,564 [27   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: d56f18b0-2ac6-435a-a54d-caa443e37012
+DEBUG 2020-04-23 22:58:29,021 [16   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: e86a2b17-26fd-4c7e-8fce-a2b19906dfd7
+DEBUG 2020-04-23 22:58:34,090 [21   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"debbace5-3f77-4cb4-a26a-29712a370f42","IpAddress":"::1","TenantId":null,"UserId":5,"ConnectTime":"2020-04-23T22:58:34.0902256+02:00","Properties":{}}
+DEBUG 2020-04-23 22:58:34,107 [7    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: debbace5-3f77-4cb4-a26a-29712a370f42
+DEBUG 2020-04-23 22:58:54,040 [27   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: f1099839-e83c-4c24-b851-2e9dd515638d
+DEBUG 2020-04-23 22:59:04,039 [6    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: d56f18b0-2ac6-435a-a54d-caa443e37012
+DEBUG 2020-04-23 23:00:46,522 [25   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"fc0d8626-4e6e-4419-997d-bd203c284f3e","IpAddress":"::1","TenantId":null,"UserId":5,"ConnectTime":"2020-04-23T23:00:46.5222868+02:00","Properties":{}}
+DEBUG 2020-04-23 23:00:46,530 [6    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: fc0d8626-4e6e-4419-997d-bd203c284f3e
+DEBUG 2020-04-23 23:01:07,050 [30   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"694c7433-6e8b-4946-b132-4e95fcbed698","IpAddress":"::1","TenantId":null,"UserId":5,"ConnectTime":"2020-04-23T23:01:07.0507227+02:00","Properties":{}}
+DEBUG 2020-04-23 23:01:07,061 [14   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 694c7433-6e8b-4946-b132-4e95fcbed698
+DEBUG 2020-04-23 23:01:19,176 [30   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: debbace5-3f77-4cb4-a26a-29712a370f42
+DEBUG 2020-04-23 23:01:39,215 [22   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: fc0d8626-4e6e-4419-997d-bd203c284f3e
+DEBUG 2020-04-23 23:02:02,377 [11   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"3f1c5d68-3daa-409c-a5d1-8efd7cb3a6ee","IpAddress":"::1","TenantId":null,"UserId":5,"ConnectTime":"2020-04-23T23:02:02.3772637+02:00","Properties":{}}
+DEBUG 2020-04-23 23:02:02,390 [35   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 3f1c5d68-3daa-409c-a5d1-8efd7cb3a6ee
+DEBUG 2020-04-23 23:02:07,115 [6    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"18fb2525-c4a4-4298-ac7a-a4e6578c578c","IpAddress":"::1","TenantId":null,"UserId":5,"ConnectTime":"2020-04-23T23:02:07.1155327+02:00","Properties":{}}
+DEBUG 2020-04-23 23:02:07,126 [30   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 18fb2525-c4a4-4298-ac7a-a4e6578c578c
+DEBUG 2020-04-23 23:02:19,754 [30   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"e9b26921-c846-41df-bdc5-f5aaf79e1a52","IpAddress":"::1","TenantId":null,"UserId":5,"ConnectTime":"2020-04-23T23:02:19.7532462+02:00","Properties":{}}
+DEBUG 2020-04-23 23:02:19,773 [24   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: e9b26921-c846-41df-bdc5-f5aaf79e1a52
+DEBUG 2020-04-23 23:02:30,291 [36   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"71854afd-3721-4789-8be7-c262b88540c6","IpAddress":"::1","TenantId":null,"UserId":5,"ConnectTime":"2020-04-23T23:02:30.291171+02:00","Properties":{}}
+DEBUG 2020-04-23 23:02:30,305 [6    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 71854afd-3721-4789-8be7-c262b88540c6
+DEBUG 2020-04-23 23:02:34,349 [36   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 694c7433-6e8b-4946-b132-4e95fcbed698
+DEBUG 2020-04-23 23:02:39,350 [11   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 3f1c5d68-3daa-409c-a5d1-8efd7cb3a6ee
+DEBUG 2020-04-23 23:02:50,092 [21   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"9638d072-0613-411e-930e-d8bdfcf9de1e","IpAddress":"::1","TenantId":null,"UserId":5,"ConnectTime":"2020-04-23T23:02:50.0921823+02:00","Properties":{}}
+DEBUG 2020-04-23 23:02:50,103 [27   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 9638d072-0613-411e-930e-d8bdfcf9de1e
+DEBUG 2020-04-23 23:02:54,368 [24   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 18fb2525-c4a4-4298-ac7a-a4e6578c578c
+DEBUG 2020-04-23 23:03:04,378 [6    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: e9b26921-c846-41df-bdc5-f5aaf79e1a52
+DEBUG 2020-04-23 23:03:05,601 [6    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"52bd3401-80a6-4629-99c8-7544f3a2e2a1","IpAddress":"::1","TenantId":null,"UserId":5,"ConnectTime":"2020-04-23T23:03:05.6010676+02:00","Properties":{}}
+DEBUG 2020-04-23 23:03:05,613 [6    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 52bd3401-80a6-4629-99c8-7544f3a2e2a1
+DEBUG 2020-04-23 23:03:22,120 [24   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"05da6ec7-30e7-48c9-8ad9-a41ec53612c4","IpAddress":"::1","TenantId":null,"UserId":5,"ConnectTime":"2020-04-23T23:03:22.1201461+02:00","Properties":{}}
+DEBUG 2020-04-23 23:03:22,134 [22   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 05da6ec7-30e7-48c9-8ad9-a41ec53612c4
+DEBUG 2020-04-23 23:03:24,380 [22   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 71854afd-3721-4789-8be7-c262b88540c6
+DEBUG 2020-04-23 23:03:33,651 [37   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"587d951b-2234-48b1-83a2-2348d1821cb2","IpAddress":"::1","TenantId":null,"UserId":5,"ConnectTime":"2020-04-23T23:03:33.6519856+02:00","Properties":{}}
+DEBUG 2020-04-23 23:03:33,665 [21   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 587d951b-2234-48b1-83a2-2348d1821cb2
+DEBUG 2020-04-23 23:03:39,395 [24   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 9638d072-0613-411e-930e-d8bdfcf9de1e
+DEBUG 2020-04-23 23:03:54,397 [22   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 52bd3401-80a6-4629-99c8-7544f3a2e2a1
+DEBUG 2020-04-23 23:04:04,398 [22   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 05da6ec7-30e7-48c9-8ad9-a41ec53612c4
+DEBUG 2020-04-23 23:04:11,583 [33   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"772f0be8-06ea-4366-b5b0-66ff2754a2ac","IpAddress":"::1","TenantId":null,"UserId":5,"ConnectTime":"2020-04-23T23:04:11.5839296+02:00","Properties":{}}
+DEBUG 2020-04-23 23:04:11,591 [37   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 772f0be8-06ea-4366-b5b0-66ff2754a2ac
+DEBUG 2020-04-23 23:04:38,973 [37   ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2020-04-23 23:04:38,975 [37   ] Abp.BackgroundJobs.BackgroundJobManager  - Stop background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2020-04-23 23:04:38,977 [37   ] Abp.BackgroundJobs.BackgroundJobManager  - WaitToStop background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2020-04-23 23:04:38,977 [37   ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2020-04-23 23:04:43,542 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2020-04-23 23:04:44,281 [1    ] Abp.Modules.AbpModuleManager             - Found 17 ABP modules in total.
+DEBUG 2020-04-23 23:04:44,291 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.Web.GoodHostWebModule, GoodHost.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 23:04:44,291 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.GoodHostDataModule, GoodHost.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 23:04:44,292 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 23:04:44,292 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 23:04:44,292 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 23:04:44,292 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 23:04:44,293 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 23:04:44,293 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 23:04:44,294 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.GoodHostCoreModule, GoodHost.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 23:04:44,294 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.GoodHostApplicationModule, GoodHost.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 23:04:44,295 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 23:04:44,295 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.Api.GoodHostWebApiModule, GoodHost.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 23:04:44,296 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 23:04:44,296 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 23:04:44,296 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 23:04:44,296 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 23:04:44,297 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 23:04:44,301 [1    ] Abp.Modules.AbpModuleManager             - 17 modules loaded.
+DEBUG 2020-04-23 23:04:44,933 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-23 23:04:44,933 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-23 23:04:44,933 [1    ] o.Configuration.LanguageManagementConfig - Converted GoodHost (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-23 23:04:44,933 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-23 23:04:45,439 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: GoodHost.EntityFramework.GoodHostDbContext, GoodHost.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 23:04:46,705 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2020-04-23 23:04:46,715 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2020-04-23 23:04:46,728 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2020-04-23 23:04:46,734 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: GoodHost
+DEBUG 2020-04-23 23:04:46,742 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2020-04-23 23:04:46,924 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2020-04-23 23:04:46,979 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 11 classes define auto mapping attributes
+DEBUG 2020-04-23 23:04:46,979 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2020-04-23 23:04:46,980 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Sessions.Dto.UserLoginInfoDto
+DEBUG 2020-04-23 23:04:46,981 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Users.Dto.CreateUserDto
+DEBUG 2020-04-23 23:04:46,981 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Users.Dto.UpdateUserDto
+DEBUG 2020-04-23 23:04:46,982 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Users.Dto.UserDto
+DEBUG 2020-04-23 23:04:46,982 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Roles.Dto.PermissionDto
+DEBUG 2020-04-23 23:04:46,982 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2020-04-23 23:04:46,982 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.MultiTenancy.Dto.EditTenantDto
+DEBUG 2020-04-23 23:04:46,982 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.MultiTenancy.Dto.TenantDto
+DEBUG 2020-04-23 23:04:46,983 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Web.Models.Account.TenantChangeViewModel
+DEBUG 2020-04-23 23:04:46,983 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2020-04-23 23:04:50,370 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2020-04-23 23:04:50,371 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2020-04-23 23:04:50,372 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2020-04-23 23:04:50,374 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2020-04-23 23:04:50,375 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Configuration.IConfigurationAppService' with service name 'app/configuration'.
+DEBUG 2020-04-23 23:04:50,376 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Authorization.Accounts.IAccountAppService' with service name 'app/account'.
+DEBUG 2020-04-23 23:04:59,400 [6    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected (on reconnected event): {"ConnectionId":"772f0be8-06ea-4366-b5b0-66ff2754a2ac","IpAddress":null,"TenantId":null,"UserId":5,"ConnectTime":"2020-04-23T23:04:59.3412709+02:00","Properties":{}}
+DEBUG 2020-04-23 23:05:04,838 [37   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"a06e62ac-5ee4-4381-9c7d-0e97ebe1e595","IpAddress":"::1","TenantId":null,"UserId":5,"ConnectTime":"2020-04-23T23:05:04.8385209+02:00","Properties":{}}
+DEBUG 2020-04-23 23:05:04,877 [24   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: a06e62ac-5ee4-4381-9c7d-0e97ebe1e595
+DEBUG 2020-04-23 23:05:39,277 [33   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 772f0be8-06ea-4366-b5b0-66ff2754a2ac
+DEBUG 2020-04-23 23:05:51,111 [38   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"696ffb51-6439-408c-adce-240eb52ac84a","IpAddress":"::1","TenantId":null,"UserId":5,"ConnectTime":"2020-04-23T23:05:51.111333+02:00","Properties":{}}
+DEBUG 2020-04-23 23:05:51,130 [38   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 696ffb51-6439-408c-adce-240eb52ac84a
+DEBUG 2020-04-23 23:06:24,337 [13   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: a06e62ac-5ee4-4381-9c7d-0e97ebe1e595
+DEBUG 2020-04-23 23:06:24,844 [6    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"8469c4bc-521e-493a-a931-48c9d916f875","IpAddress":"::1","TenantId":null,"UserId":5,"ConnectTime":"2020-04-23T23:06:24.8444346+02:00","Properties":{}}
+DEBUG 2020-04-23 23:06:24,854 [28   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 8469c4bc-521e-493a-a931-48c9d916f875
+DEBUG 2020-04-23 23:06:46,121 [38   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"d0d745f6-c489-44fa-9fe5-3320432d9582","IpAddress":"::1","TenantId":null,"UserId":5,"ConnectTime":"2020-04-23T23:06:46.1213513+02:00","Properties":{}}
+DEBUG 2020-04-23 23:06:46,136 [38   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: d0d745f6-c489-44fa-9fe5-3320432d9582
+DEBUG 2020-04-23 23:06:59,410 [13   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 696ffb51-6439-408c-adce-240eb52ac84a
+DEBUG 2020-04-23 23:07:14,465 [13   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"bf12d0ff-e2cd-4872-9c9b-f1e079ee6c34","IpAddress":"::1","TenantId":null,"UserId":5,"ConnectTime":"2020-04-23T23:07:14.4650464+02:00","Properties":{}}
+DEBUG 2020-04-23 23:07:14,472 [38   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: bf12d0ff-e2cd-4872-9c9b-f1e079ee6c34
+DEBUG 2020-04-23 23:07:19,414 [17   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 8469c4bc-521e-493a-a931-48c9d916f875
+DEBUG 2020-04-23 23:07:44,430 [20   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: d0d745f6-c489-44fa-9fe5-3320432d9582
+DEBUG 2020-04-23 23:09:37,624 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2020-04-23 23:09:38,504 [1    ] Abp.Modules.AbpModuleManager             - Found 17 ABP modules in total.
+DEBUG 2020-04-23 23:09:38,519 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.Web.GoodHostWebModule, GoodHost.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 23:09:38,520 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.GoodHostDataModule, GoodHost.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 23:09:38,520 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 23:09:38,520 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 23:09:38,521 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 23:09:38,521 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 23:09:38,522 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 23:09:38,522 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 23:09:38,522 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.GoodHostCoreModule, GoodHost.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 23:09:38,523 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.GoodHostApplicationModule, GoodHost.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 23:09:38,523 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 23:09:38,523 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.Api.GoodHostWebApiModule, GoodHost.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 23:09:38,523 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 23:09:38,524 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 23:09:38,524 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 23:09:38,525 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 23:09:38,525 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 23:09:38,533 [1    ] Abp.Modules.AbpModuleManager             - 17 modules loaded.
+DEBUG 2020-04-23 23:09:39,460 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-23 23:09:39,460 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-23 23:09:39,460 [1    ] o.Configuration.LanguageManagementConfig - Converted GoodHost (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-23 23:09:39,460 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-23 23:09:40,244 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: GoodHost.EntityFramework.GoodHostDbContext, GoodHost.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 23:09:42,018 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2020-04-23 23:09:42,066 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2020-04-23 23:09:42,084 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2020-04-23 23:09:42,097 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: GoodHost
+DEBUG 2020-04-23 23:09:42,113 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2020-04-23 23:09:42,261 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2020-04-23 23:09:42,299 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 11 classes define auto mapping attributes
+DEBUG 2020-04-23 23:09:42,299 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2020-04-23 23:09:42,300 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Sessions.Dto.UserLoginInfoDto
+DEBUG 2020-04-23 23:09:42,300 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Users.Dto.CreateUserDto
+DEBUG 2020-04-23 23:09:42,301 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Users.Dto.UpdateUserDto
+DEBUG 2020-04-23 23:09:42,301 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Users.Dto.UserDto
+DEBUG 2020-04-23 23:09:42,301 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Roles.Dto.PermissionDto
+DEBUG 2020-04-23 23:09:42,301 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2020-04-23 23:09:42,301 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.MultiTenancy.Dto.EditTenantDto
+DEBUG 2020-04-23 23:09:42,301 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.MultiTenancy.Dto.TenantDto
+DEBUG 2020-04-23 23:09:42,301 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Web.Models.Account.TenantChangeViewModel
+DEBUG 2020-04-23 23:09:42,302 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2020-04-23 23:09:45,180 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2020-04-23 23:09:45,181 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2020-04-23 23:09:45,182 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2020-04-23 23:09:45,184 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2020-04-23 23:09:45,185 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Configuration.IConfigurationAppService' with service name 'app/configuration'.
+DEBUG 2020-04-23 23:09:45,186 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Authorization.Accounts.IAccountAppService' with service name 'app/account'.
+DEBUG 2020-04-23 23:10:00,083 [9    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"7f78b8f8-0ae6-44aa-87dd-f07d91520d0d","IpAddress":"::1","TenantId":null,"UserId":5,"ConnectTime":"2020-04-23T23:10:00.0756331+02:00","Properties":{}}
+DEBUG 2020-04-23 23:10:00,134 [7    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 7f78b8f8-0ae6-44aa-87dd-f07d91520d0d
+DEBUG 2020-04-23 23:13:46,674 [34   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 7f78b8f8-0ae6-44aa-87dd-f07d91520d0d
+DEBUG 2020-04-23 23:13:47,022 [38   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"1d225593-2679-4cca-a7b1-45ef9b2729cd","IpAddress":"::1","TenantId":null,"UserId":5,"ConnectTime":"2020-04-23T23:13:47.0221627+02:00","Properties":{}}
+DEBUG 2020-04-23 23:13:47,038 [40   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 1d225593-2679-4cca-a7b1-45ef9b2729cd
+DEBUG 2020-04-23 23:13:59,466 [28   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"bc1153db-f0e3-4917-a00c-8d83f8ca2969","IpAddress":"::1","TenantId":null,"UserId":5,"ConnectTime":"2020-04-23T23:13:59.466691+02:00","Properties":{}}
+DEBUG 2020-04-23 23:13:59,477 [35   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: bc1153db-f0e3-4917-a00c-8d83f8ca2969
+DEBUG 2020-04-23 23:14:22,438 [38   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"2161e4fc-e138-48a5-9965-d1fb3f4c3361","IpAddress":"::1","TenantId":null,"UserId":5,"ConnectTime":"2020-04-23T23:14:22.4386875+02:00","Properties":{}}
+DEBUG 2020-04-23 23:14:22,446 [35   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 2161e4fc-e138-48a5-9965-d1fb3f4c3361
+DEBUG 2020-04-23 23:14:30,203 [43   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 1d225593-2679-4cca-a7b1-45ef9b2729cd
+DEBUG 2020-04-23 23:14:55,238 [42   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: bc1153db-f0e3-4917-a00c-8d83f8ca2969
+DEBUG 2020-04-23 23:15:14,542 [31   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"09f62683-0fbf-4b63-a94d-eb244e181922","IpAddress":"::1","TenantId":null,"UserId":5,"ConnectTime":"2020-04-23T23:15:14.5429857+02:00","Properties":{}}
+DEBUG 2020-04-23 23:15:14,554 [37   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 09f62683-0fbf-4b63-a94d-eb244e181922
+DEBUG 2020-04-23 23:15:45,290 [28   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 2161e4fc-e138-48a5-9965-d1fb3f4c3361
+DEBUG 2020-04-23 23:19:01,712 [62   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"2921d079-b7fe-4533-9404-2c87ae8a6a66","IpAddress":"::1","TenantId":null,"UserId":5,"ConnectTime":"2020-04-23T23:19:01.7123256+02:00","Properties":{}}
+DEBUG 2020-04-23 23:19:01,726 [59   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 2921d079-b7fe-4533-9404-2c87ae8a6a66
+DEBUG 2020-04-23 23:19:35,631 [67   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 09f62683-0fbf-4b63-a94d-eb244e181922
+DEBUG 2020-04-23 23:20:34,903 [64   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"9ae91d69-ea12-48b8-8360-9d642d73e58c","IpAddress":"::1","TenantId":null,"UserId":5,"ConnectTime":"2020-04-23T23:20:34.903265+02:00","Properties":{}}
+DEBUG 2020-04-23 23:20:34,917 [64   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 9ae91d69-ea12-48b8-8360-9d642d73e58c
+DEBUG 2020-04-23 23:21:05,738 [66   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 2921d079-b7fe-4533-9404-2c87ae8a6a66
+DEBUG 2020-04-23 23:22:17,454 [65   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"73c570ff-ef20-4752-ad54-ba09c00ba382","IpAddress":"::1","TenantId":null,"UserId":5,"ConnectTime":"2020-04-23T23:22:17.4543735+02:00","Properties":{}}
+DEBUG 2020-04-23 23:22:17,469 [63   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 73c570ff-ef20-4752-ad54-ba09c00ba382
+DEBUG 2020-04-23 23:22:50,885 [54   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 9ae91d69-ea12-48b8-8360-9d642d73e58c
+DEBUG 2020-04-23 23:25:08,513 [66   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"06f6cb6d-cf88-49de-b306-3cf417fbe5a7","IpAddress":"::1","TenantId":null,"UserId":5,"ConnectTime":"2020-04-23T23:25:08.5136262+02:00","Properties":{}}
+DEBUG 2020-04-23 23:25:08,527 [49   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 06f6cb6d-cf88-49de-b306-3cf417fbe5a7
+DEBUG 2020-04-23 23:25:49,101 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2020-04-23 23:25:49,956 [1    ] Abp.Modules.AbpModuleManager             - Found 17 ABP modules in total.
+DEBUG 2020-04-23 23:25:49,968 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.Web.GoodHostWebModule, GoodHost.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 23:25:49,968 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.GoodHostDataModule, GoodHost.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 23:25:49,969 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 23:25:49,969 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 23:25:49,969 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 23:25:49,970 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 23:25:49,970 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 23:25:49,971 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 23:25:49,971 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.GoodHostCoreModule, GoodHost.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 23:25:49,971 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.GoodHostApplicationModule, GoodHost.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 23:25:49,972 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 23:25:49,972 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.Api.GoodHostWebApiModule, GoodHost.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 23:25:49,972 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 23:25:49,973 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 23:25:49,973 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 23:25:49,973 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 23:25:49,974 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 23:25:49,982 [1    ] Abp.Modules.AbpModuleManager             - 17 modules loaded.
+DEBUG 2020-04-23 23:25:50,921 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-23 23:25:50,921 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-23 23:25:50,921 [1    ] o.Configuration.LanguageManagementConfig - Converted GoodHost (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-23 23:25:50,921 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-23 23:25:51,741 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: GoodHost.EntityFramework.GoodHostDbContext, GoodHost.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 23:25:53,475 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2020-04-23 23:25:53,519 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2020-04-23 23:25:53,540 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2020-04-23 23:25:53,548 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: GoodHost
+DEBUG 2020-04-23 23:25:53,556 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2020-04-23 23:25:53,714 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2020-04-23 23:25:53,754 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 11 classes define auto mapping attributes
+DEBUG 2020-04-23 23:25:53,754 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2020-04-23 23:25:53,755 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Sessions.Dto.UserLoginInfoDto
+DEBUG 2020-04-23 23:25:53,755 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Users.Dto.CreateUserDto
+DEBUG 2020-04-23 23:25:53,756 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Users.Dto.UpdateUserDto
+DEBUG 2020-04-23 23:25:53,756 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Users.Dto.UserDto
+DEBUG 2020-04-23 23:25:53,756 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Roles.Dto.PermissionDto
+DEBUG 2020-04-23 23:25:53,756 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2020-04-23 23:25:53,756 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.MultiTenancy.Dto.EditTenantDto
+DEBUG 2020-04-23 23:25:53,756 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.MultiTenancy.Dto.TenantDto
+DEBUG 2020-04-23 23:25:53,757 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Web.Models.Account.TenantChangeViewModel
+DEBUG 2020-04-23 23:25:53,757 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2020-04-23 23:25:56,373 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2020-04-23 23:25:56,375 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2020-04-23 23:25:56,377 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2020-04-23 23:25:56,379 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2020-04-23 23:25:56,381 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Configuration.IConfigurationAppService' with service name 'app/configuration'.
+DEBUG 2020-04-23 23:25:56,382 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Authorization.Accounts.IAccountAppService' with service name 'app/account'.
+WARN  2020-04-23 23:26:03,139 [8    ] Abp.Logging.LogHelper                    - Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   at Abp.Authorization.AuthorizationHelper.Authorize(IEnumerable`1 authorizeAttributes)
+   at Abp.Authorization.AuthorizationHelper.CheckPermissions(MethodInfo methodInfo, Type type)
+   at Abp.Authorization.AuthorizationHelper.Authorize(MethodInfo methodInfo, Type type)
+   at Abp.Web.Mvc.Authorization.AbpMvcAuthorizeFilter.OnAuthorization(AuthorizationContext filterContext)
+Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   at Abp.Authorization.AuthorizationHelper.Authorize(IEnumerable`1 authorizeAttributes)
+   at Abp.Authorization.AuthorizationHelper.CheckPermissions(MethodInfo methodInfo, Type type)
+   at Abp.Authorization.AuthorizationHelper.Authorize(MethodInfo methodInfo, Type type)
+   at Abp.Web.Mvc.Authorization.AbpMvcAuthorizeFilter.OnAuthorization(AuthorizationContext filterContext)
+DEBUG 2020-04-23 23:26:27,725 [10   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"4912c0c8-8d7e-4327-9153-f5f21fa1d5a4","IpAddress":"::1","TenantId":null,"UserId":5,"ConnectTime":"2020-04-23T23:26:27.7144893+02:00","Properties":{}}
+DEBUG 2020-04-23 23:26:27,771 [7    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 4912c0c8-8d7e-4327-9153-f5f21fa1d5a4
+DEBUG 2020-04-23 23:26:57,013 [16   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"22643dd9-dd07-4e80-bb8f-582310b6d47e","IpAddress":"::1","TenantId":null,"UserId":5,"ConnectTime":"2020-04-23T23:26:57.0138738+02:00","Properties":{}}
+DEBUG 2020-04-23 23:26:57,032 [7    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 22643dd9-dd07-4e80-bb8f-582310b6d47e
+DEBUG 2020-04-23 23:27:27,541 [21   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 4912c0c8-8d7e-4327-9153-f5f21fa1d5a4
+DEBUG 2020-04-23 23:28:19,386 [15   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"9943419d-9b80-4848-b295-10627a867b2d","IpAddress":"::1","TenantId":null,"UserId":5,"ConnectTime":"2020-04-23T23:28:19.3860415+02:00","Properties":{}}
+DEBUG 2020-04-23 23:28:19,397 [15   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 9943419d-9b80-4848-b295-10627a867b2d
+DEBUG 2020-04-23 23:28:52,567 [15   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 22643dd9-dd07-4e80-bb8f-582310b6d47e
+DEBUG 2020-04-23 23:33:29,659 [56   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"7bac59ce-b738-4754-aee2-6faeecd219b4","IpAddress":"::1","TenantId":null,"UserId":5,"ConnectTime":"2020-04-23T23:33:29.6587815+02:00","Properties":{}}
+DEBUG 2020-04-23 23:33:29,674 [54   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 7bac59ce-b738-4754-aee2-6faeecd219b4
+DEBUG 2020-04-23 23:33:36,078 [54   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"e2097d65-4841-4105-b888-56d33c6d0c5a","IpAddress":"::1","TenantId":null,"UserId":5,"ConnectTime":"2020-04-23T23:33:36.0787443+02:00","Properties":{}}
+DEBUG 2020-04-23 23:33:36,091 [56   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: e2097d65-4841-4105-b888-56d33c6d0c5a
+DEBUG 2020-04-23 23:33:42,425 [57   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"19fbbabe-28ee-4bda-b57f-294e8581ba99","IpAddress":"::1","TenantId":null,"UserId":5,"ConnectTime":"2020-04-23T23:33:42.425982+02:00","Properties":{}}
+DEBUG 2020-04-23 23:33:42,434 [58   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 19fbbabe-28ee-4bda-b57f-294e8581ba99
+DEBUG 2020-04-23 23:34:02,898 [48   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 9943419d-9b80-4848-b295-10627a867b2d
+DEBUG 2020-04-23 23:34:04,493 [57   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"6536a705-0232-41e8-8dd8-2993cbdc9f4c","IpAddress":"::1","TenantId":null,"UserId":5,"ConnectTime":"2020-04-23T23:34:04.4938029+02:00","Properties":{}}
+DEBUG 2020-04-23 23:34:04,506 [58   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 6536a705-0232-41e8-8dd8-2993cbdc9f4c
+DEBUG 2020-04-23 23:34:07,899 [57   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 7bac59ce-b738-4754-aee2-6faeecd219b4
+DEBUG 2020-04-23 23:34:12,899 [57   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: e2097d65-4841-4105-b888-56d33c6d0c5a
+DEBUG 2020-04-23 23:34:37,912 [53   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 19fbbabe-28ee-4bda-b57f-294e8581ba99
+DEBUG 2020-04-23 23:35:23,483 [65   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"4bf8a31e-897c-4668-a69d-9cc4c8bea139","IpAddress":"::1","TenantId":null,"UserId":5,"ConnectTime":"2020-04-23T23:35:23.4832776+02:00","Properties":{}}
+DEBUG 2020-04-23 23:35:23,494 [66   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 4bf8a31e-897c-4668-a69d-9cc4c8bea139
+DEBUG 2020-04-23 23:35:57,993 [53   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 6536a705-0232-41e8-8dd8-2993cbdc9f4c
+DEBUG 2020-04-23 23:37:19,828 [47   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 4bf8a31e-897c-4668-a69d-9cc4c8bea139
+DEBUG 2020-04-23 23:37:20,231 [52   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"4bdd4f8a-dfba-46b0-878e-1ce89812b084","IpAddress":"::1","TenantId":null,"UserId":5,"ConnectTime":"2020-04-23T23:37:20.2310624+02:00","Properties":{}}
+DEBUG 2020-04-23 23:37:20,244 [51   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 4bdd4f8a-dfba-46b0-878e-1ce89812b084
+DEBUG 2020-04-23 23:37:41,674 [47   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"d177de74-a2d7-4514-bc1e-159003555919","IpAddress":"::1","TenantId":null,"UserId":5,"ConnectTime":"2020-04-23T23:37:41.6745526+02:00","Properties":{}}
+DEBUG 2020-04-23 23:37:41,689 [46   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: d177de74-a2d7-4514-bc1e-159003555919
+DEBUG 2020-04-23 23:38:13,084 [52   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 4bdd4f8a-dfba-46b0-878e-1ce89812b084
+DEBUG 2020-04-23 23:38:59,607 [52   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"e5d3c1be-9383-4769-ad4d-9952947a51ea","IpAddress":"::1","TenantId":null,"UserId":5,"ConnectTime":"2020-04-23T23:38:59.6076841+02:00","Properties":{}}
+DEBUG 2020-04-23 23:38:59,619 [50   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: e5d3c1be-9383-4769-ad4d-9952947a51ea
+DEBUG 2020-04-23 23:39:30,901 [45   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"ab9b882a-f7d7-4e0c-adf0-482dd8ab8d87","IpAddress":"::1","TenantId":null,"UserId":5,"ConnectTime":"2020-04-23T23:39:30.9010669+02:00","Properties":{}}
+DEBUG 2020-04-23 23:39:30,916 [65   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: ab9b882a-f7d7-4e0c-adf0-482dd8ab8d87
+DEBUG 2020-04-23 23:39:33,191 [42   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: d177de74-a2d7-4514-bc1e-159003555919
+DEBUG 2020-04-23 23:40:03,193 [65   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: e5d3c1be-9383-4769-ad4d-9952947a51ea
+DEBUG 2020-04-23 23:40:14,440 [65   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"234f65b8-eaf7-4ae4-94db-aa16e75fd5ec","IpAddress":"::1","TenantId":null,"UserId":5,"ConnectTime":"2020-04-23T23:40:14.4406319+02:00","Properties":{}}
+DEBUG 2020-04-23 23:40:14,457 [50   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 234f65b8-eaf7-4ae4-94db-aa16e75fd5ec
+DEBUG 2020-04-23 23:40:48,241 [65   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: ab9b882a-f7d7-4e0c-adf0-482dd8ab8d87
+DEBUG 2020-04-23 23:44:25,590 [28   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"fcb9ccc6-4430-4f76-a32d-d7c60a6d7805","IpAddress":"::1","TenantId":null,"UserId":5,"ConnectTime":"2020-04-23T23:44:25.5904064+02:00","Properties":{}}
+DEBUG 2020-04-23 23:44:25,600 [46   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: fcb9ccc6-4430-4f76-a32d-d7c60a6d7805
+DEBUG 2020-04-23 23:44:58,431 [30   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 234f65b8-eaf7-4ae4-94db-aa16e75fd5ec
+DEBUG 2020-04-23 23:52:53,311 [80   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"361dead6-6b86-4c1d-8e83-9c810a257542","IpAddress":"::1","TenantId":null,"UserId":5,"ConnectTime":"2020-04-23T23:52:53.3115418+02:00","Properties":{}}
+DEBUG 2020-04-23 23:52:53,326 [82   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 361dead6-6b86-4c1d-8e83-9c810a257542
+DEBUG 2020-04-23 23:53:23,948 [82   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: fcb9ccc6-4430-4f76-a32d-d7c60a6d7805
+DEBUG 2020-04-23 23:53:34,899 [14   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"77b9813b-b1c2-47e9-a8f0-ac68e8a3f3a6","IpAddress":"::1","TenantId":null,"UserId":5,"ConnectTime":"2020-04-23T23:53:34.8999831+02:00","Properties":{}}
+DEBUG 2020-04-23 23:53:34,917 [18   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 77b9813b-b1c2-47e9-a8f0-ac68e8a3f3a6
+DEBUG 2020-04-23 23:54:09,050 [82   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 361dead6-6b86-4c1d-8e83-9c810a257542
+DEBUG 2020-04-23 23:54:39,408 [79   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 77b9813b-b1c2-47e9-a8f0-ac68e8a3f3a6
+DEBUG 2020-04-23 23:54:39,815 [82   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"a6f54572-2162-4431-a91b-c70a68aeef64","IpAddress":"::1","TenantId":null,"UserId":5,"ConnectTime":"2020-04-23T23:54:39.8159268+02:00","Properties":{}}
+DEBUG 2020-04-23 23:54:39,826 [79   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: a6f54572-2162-4431-a91b-c70a68aeef64
+DEBUG 2020-04-23 23:55:06,406 [78   ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2020-04-23 23:55:06,409 [78   ] Abp.BackgroundJobs.BackgroundJobManager  - Stop background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2020-04-23 23:55:06,410 [78   ] Abp.BackgroundJobs.BackgroundJobManager  - WaitToStop background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2020-04-23 23:55:06,411 [78   ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2020-04-23 23:55:12,961 [13   ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2020-04-23 23:55:14,275 [13   ] Abp.Modules.AbpModuleManager             - Found 17 ABP modules in total.
+DEBUG 2020-04-23 23:55:14,287 [13   ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.Web.GoodHostWebModule, GoodHost.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 23:55:14,288 [13   ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.GoodHostDataModule, GoodHost.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 23:55:14,289 [13   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 23:55:14,289 [13   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 23:55:14,289 [13   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 23:55:14,290 [13   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 23:55:14,290 [13   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 23:55:14,290 [13   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 23:55:14,291 [13   ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.GoodHostCoreModule, GoodHost.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 23:55:14,291 [13   ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.GoodHostApplicationModule, GoodHost.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 23:55:14,292 [13   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 23:55:14,292 [13   ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.Api.GoodHostWebApiModule, GoodHost.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 23:55:14,292 [13   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 23:55:14,293 [13   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 23:55:14,293 [13   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 23:55:14,294 [13   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 23:55:14,294 [13   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 23:55:14,300 [13   ] Abp.Modules.AbpModuleManager             - 17 modules loaded.
+DEBUG 2020-04-23 23:55:15,816 [13   ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-23 23:55:15,816 [13   ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-23 23:55:15,816 [13   ] o.Configuration.LanguageManagementConfig - Converted GoodHost (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-23 23:55:15,816 [13   ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-23 23:55:16,503 [13   ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: GoodHost.EntityFramework.GoodHostDbContext, GoodHost.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 23:55:17,928 [13   ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2020-04-23 23:55:17,945 [13   ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2020-04-23 23:55:17,966 [13   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2020-04-23 23:55:17,972 [13   ] Abp.Localization.LocalizationManager     - Initialized localization source: GoodHost
+DEBUG 2020-04-23 23:55:17,980 [13   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2020-04-23 23:55:18,214 [13   ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2020-04-23 23:55:18,264 [13   ] Abp.AutoMapper.AbpAutoMapperModule       - Found 11 classes define auto mapping attributes
+DEBUG 2020-04-23 23:55:18,264 [13   ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2020-04-23 23:55:18,265 [13   ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Sessions.Dto.UserLoginInfoDto
+DEBUG 2020-04-23 23:55:18,266 [13   ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Users.Dto.CreateUserDto
+DEBUG 2020-04-23 23:55:18,266 [13   ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Users.Dto.UpdateUserDto
+DEBUG 2020-04-23 23:55:18,266 [13   ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Users.Dto.UserDto
+DEBUG 2020-04-23 23:55:18,267 [13   ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Roles.Dto.PermissionDto
+DEBUG 2020-04-23 23:55:18,267 [13   ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2020-04-23 23:55:18,267 [13   ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.MultiTenancy.Dto.EditTenantDto
+DEBUG 2020-04-23 23:55:18,267 [13   ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.MultiTenancy.Dto.TenantDto
+DEBUG 2020-04-23 23:55:18,267 [13   ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Web.Models.Account.TenantChangeViewModel
+DEBUG 2020-04-23 23:55:18,268 [13   ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2020-04-23 23:55:21,627 [13   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2020-04-23 23:55:21,629 [13   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2020-04-23 23:55:21,630 [13   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2020-04-23 23:55:21,632 [13   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2020-04-23 23:55:21,633 [13   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Configuration.IConfigurationAppService' with service name 'app/configuration'.
+DEBUG 2020-04-23 23:55:21,634 [13   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Authorization.Accounts.IAccountAppService' with service name 'app/account'.
+DEBUG 2020-04-23 23:55:39,492 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2020-04-23 23:55:40,821 [1    ] Abp.Modules.AbpModuleManager             - Found 17 ABP modules in total.
+DEBUG 2020-04-23 23:55:40,836 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.Web.GoodHostWebModule, GoodHost.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 23:55:40,837 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.GoodHostDataModule, GoodHost.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 23:55:40,837 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 23:55:40,837 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 23:55:40,838 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 23:55:40,838 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 23:55:40,839 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 23:55:40,839 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 23:55:40,840 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.GoodHostCoreModule, GoodHost.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 23:55:40,840 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.GoodHostApplicationModule, GoodHost.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 23:55:40,841 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 23:55:40,841 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.Api.GoodHostWebApiModule, GoodHost.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 23:55:40,842 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 23:55:40,843 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 23:55:40,843 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 23:55:40,843 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 23:55:40,844 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 23:55:40,849 [1    ] Abp.Modules.AbpModuleManager             - 17 modules loaded.
+DEBUG 2020-04-23 23:55:42,337 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-23 23:55:42,337 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-23 23:55:42,337 [1    ] o.Configuration.LanguageManagementConfig - Converted GoodHost (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-23 23:55:42,337 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-23 23:55:43,105 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: GoodHost.EntityFramework.GoodHostDbContext, GoodHost.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 23:55:44,510 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2020-04-23 23:55:44,574 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2020-04-23 23:55:44,594 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2020-04-23 23:55:44,603 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: GoodHost
+DEBUG 2020-04-23 23:55:44,613 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2020-04-23 23:55:44,808 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2020-04-23 23:55:44,861 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 11 classes define auto mapping attributes
+DEBUG 2020-04-23 23:55:44,861 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2020-04-23 23:55:44,861 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Sessions.Dto.UserLoginInfoDto
+DEBUG 2020-04-23 23:55:44,862 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Users.Dto.CreateUserDto
+DEBUG 2020-04-23 23:55:44,862 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Users.Dto.UpdateUserDto
+DEBUG 2020-04-23 23:55:44,862 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Users.Dto.UserDto
+DEBUG 2020-04-23 23:55:44,862 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Roles.Dto.PermissionDto
+DEBUG 2020-04-23 23:55:44,863 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2020-04-23 23:55:44,863 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.MultiTenancy.Dto.EditTenantDto
+DEBUG 2020-04-23 23:55:44,863 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.MultiTenancy.Dto.TenantDto
+DEBUG 2020-04-23 23:55:44,863 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Web.Models.Account.TenantChangeViewModel
+DEBUG 2020-04-23 23:55:44,863 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2020-04-23 23:55:48,354 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2020-04-23 23:55:48,356 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2020-04-23 23:55:48,358 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2020-04-23 23:55:48,385 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2020-04-23 23:55:48,386 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Configuration.IConfigurationAppService' with service name 'app/configuration'.
+DEBUG 2020-04-23 23:55:48,387 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Authorization.Accounts.IAccountAppService' with service name 'app/account'.
+DEBUG 2020-04-23 23:56:06,515 [8    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"69f14c0c-25a9-4ffd-a009-2da042d75614","IpAddress":"::1","TenantId":null,"UserId":5,"ConnectTime":"2020-04-23T23:56:06.506868+02:00","Properties":{}}
+DEBUG 2020-04-23 23:56:06,567 [8    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 69f14c0c-25a9-4ffd-a009-2da042d75614
+DEBUG 2020-04-23 23:57:04,343 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2020-04-23 23:57:05,583 [1    ] Abp.Modules.AbpModuleManager             - Found 17 ABP modules in total.
+DEBUG 2020-04-23 23:57:05,597 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.Web.GoodHostWebModule, GoodHost.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 23:57:05,597 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.GoodHostDataModule, GoodHost.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 23:57:05,598 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 23:57:05,598 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 23:57:05,599 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 23:57:05,599 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 23:57:05,599 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 23:57:05,600 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 23:57:05,600 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.GoodHostCoreModule, GoodHost.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 23:57:05,600 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.GoodHostApplicationModule, GoodHost.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 23:57:05,601 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 23:57:05,601 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GoodHost.Api.GoodHostWebApiModule, GoodHost.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 23:57:05,601 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 23:57:05,601 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 23:57:05,602 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 23:57:05,602 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 23:57:05,603 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 23:57:05,608 [1    ] Abp.Modules.AbpModuleManager             - 17 modules loaded.
+DEBUG 2020-04-23 23:57:06,708 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-23 23:57:06,708 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-23 23:57:06,708 [1    ] o.Configuration.LanguageManagementConfig - Converted GoodHost (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-23 23:57:06,708 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-23 23:57:08,206 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: GoodHost.EntityFramework.GoodHostDbContext, GoodHost.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-23 23:57:10,348 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2020-04-23 23:57:10,417 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2020-04-23 23:57:10,446 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2020-04-23 23:57:10,459 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: GoodHost
+DEBUG 2020-04-23 23:57:10,482 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2020-04-23 23:57:10,734 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2020-04-23 23:57:10,812 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 11 classes define auto mapping attributes
+DEBUG 2020-04-23 23:57:10,812 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2020-04-23 23:57:10,813 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Sessions.Dto.UserLoginInfoDto
+DEBUG 2020-04-23 23:57:10,814 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Users.Dto.CreateUserDto
+DEBUG 2020-04-23 23:57:10,815 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Users.Dto.UpdateUserDto
+DEBUG 2020-04-23 23:57:10,815 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Users.Dto.UserDto
+DEBUG 2020-04-23 23:57:10,815 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Roles.Dto.PermissionDto
+DEBUG 2020-04-23 23:57:10,816 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2020-04-23 23:57:10,816 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.MultiTenancy.Dto.EditTenantDto
+DEBUG 2020-04-23 23:57:10,816 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.MultiTenancy.Dto.TenantDto
+DEBUG 2020-04-23 23:57:10,816 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Web.Models.Account.TenantChangeViewModel
+DEBUG 2020-04-23 23:57:10,817 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GoodHost.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2020-04-23 23:57:14,513 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2020-04-23 23:57:14,515 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2020-04-23 23:57:14,516 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2020-04-23 23:57:14,518 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2020-04-23 23:57:14,520 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Configuration.IConfigurationAppService' with service name 'app/configuration'.
+DEBUG 2020-04-23 23:57:14,523 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'GoodHost.Authorization.Accounts.IAccountAppService' with service name 'app/account'.
+WARN  2020-04-23 23:57:23,456 [7    ] Abp.Logging.LogHelper                    - Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   at Abp.Authorization.AuthorizationHelper.Authorize(IEnumerable`1 authorizeAttributes)
+   at Abp.Authorization.AuthorizationHelper.CheckPermissions(MethodInfo methodInfo, Type type)
+   at Abp.Authorization.AuthorizationHelper.Authorize(MethodInfo methodInfo, Type type)
+   at Abp.Web.Mvc.Authorization.AbpMvcAuthorizeFilter.OnAuthorization(AuthorizationContext filterContext)
+Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   at Abp.Authorization.AuthorizationHelper.Authorize(IEnumerable`1 authorizeAttributes)
+   at Abp.Authorization.AuthorizationHelper.CheckPermissions(MethodInfo methodInfo, Type type)
+   at Abp.Authorization.AuthorizationHelper.Authorize(MethodInfo methodInfo, Type type)
+   at Abp.Web.Mvc.Authorization.AbpMvcAuthorizeFilter.OnAuthorization(AuthorizationContext filterContext)
+DEBUG 2020-04-23 23:57:37,757 [10   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"169fab60-d1b1-412e-906e-3179f5b0ea9c","IpAddress":"::1","TenantId":null,"UserId":5,"ConnectTime":"2020-04-23T23:57:37.7445621+02:00","Properties":{}}
+DEBUG 2020-04-23 23:57:37,809 [8    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 169fab60-d1b1-412e-906e-3179f5b0ea9c
+DEBUG 2020-04-23 23:58:05,504 [17   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"b71fa72c-0de1-4ea9-ba26-154e0c4a4b91","IpAddress":"::1","TenantId":null,"UserId":5,"ConnectTime":"2020-04-23T23:58:05.5046596+02:00","Properties":{}}
+DEBUG 2020-04-23 23:58:05,518 [16   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: b71fa72c-0de1-4ea9-ba26-154e0c4a4b91
+DEBUG 2020-04-23 23:58:37,549 [12   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 169fab60-d1b1-412e-906e-3179f5b0ea9c
+DEBUG 2020-04-23 23:58:45,994 [15   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"bc399b9d-24ed-489f-a597-9fc620908942","IpAddress":"::1","TenantId":null,"UserId":5,"ConnectTime":"2020-04-23T23:58:45.9945204+02:00","Properties":{}}
+DEBUG 2020-04-23 23:58:46,012 [15   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: bc399b9d-24ed-489f-a597-9fc620908942
+DEBUG 2020-04-23 23:58:57,602 [8    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: bc399b9d-24ed-489f-a597-9fc620908942
+DEBUG 2020-04-23 23:58:57,974 [15   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"8600624e-ce3d-4e83-b06f-c1f4d9bbe754","IpAddress":"::1","TenantId":null,"UserId":5,"ConnectTime":"2020-04-23T23:58:57.9741611+02:00","Properties":{}}
+DEBUG 2020-04-23 23:58:57,987 [16   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 8600624e-ce3d-4e83-b06f-c1f4d9bbe754
+DEBUG 2020-04-23 23:59:17,606 [31   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: b71fa72c-0de1-4ea9-ba26-154e0c4a4b91
+DEBUG 2020-04-23 23:59:18,199 [8    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 8600624e-ce3d-4e83-b06f-c1f4d9bbe754
+DEBUG 2020-04-23 23:59:18,838 [29   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"bf188666-1900-43e5-88a9-a80337aea25f","IpAddress":"::1","TenantId":null,"UserId":5,"ConnectTime":"2020-04-23T23:59:18.8386764+02:00","Properties":{}}
+DEBUG 2020-04-23 23:59:18,873 [29   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: bf188666-1900-43e5-88a9-a80337aea25f
+DEBUG 2020-04-23 23:59:28,954 [10   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"4a8df5ce-5f0c-41d6-ba3c-0b8dd5ca07b4","IpAddress":"::1","TenantId":null,"UserId":5,"ConnectTime":"2020-04-23T23:59:28.9548441+02:00","Properties":{}}
+DEBUG 2020-04-23 23:59:28,967 [31   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 4a8df5ce-5f0c-41d6-ba3c-0b8dd5ca07b4
+DEBUG 2020-04-24 00:00:02,635 [12   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"f275832a-d3ea-4362-8a54-87232df03b70","IpAddress":"::1","TenantId":null,"UserId":5,"ConnectTime":"2020-04-24T00:00:02.6359197+02:00","Properties":{}}
+DEBUG 2020-04-24 00:00:02,649 [9    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: bf188666-1900-43e5-88a9-a80337aea25f
+DEBUG 2020-04-24 00:00:02,650 [9    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: f275832a-d3ea-4362-8a54-87232df03b70
+DEBUG 2020-04-24 00:00:32,691 [20   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 4a8df5ce-5f0c-41d6-ba3c-0b8dd5ca07b4
+DEBUG 2020-04-24 00:00:58,280 [20   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"290f1204-b636-41d8-ac49-9b00cd6af546","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2020-04-24T00:00:58.2802909+02:00","Properties":{}}
+DEBUG 2020-04-24 00:00:58,295 [10   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 290f1204-b636-41d8-ac49-9b00cd6af546
+DEBUG 2020-04-24 00:01:22,787 [9    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: f275832a-d3ea-4362-8a54-87232df03b70
