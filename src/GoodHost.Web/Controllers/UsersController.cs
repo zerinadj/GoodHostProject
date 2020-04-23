@@ -54,5 +54,6 @@ namespace GoodHost.Web.Controllers
             };
             return View("_EditUserModal", model);
         }
+        
     }
 }

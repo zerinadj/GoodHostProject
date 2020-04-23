@@ -8,6 +8,10 @@ namespace GoodHost.Web.Controllers
     {
         public ActionResult Index()
         {
+            if (User.IsInRole("User"))
+            {
+                return RedirectToAction("UsersHome", "UserLog");
+            }
             return View();
         }
 	}
