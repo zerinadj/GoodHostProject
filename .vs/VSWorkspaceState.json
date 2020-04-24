@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\src"
+    "\\src",
+    "\\src\\GoodHost.Web",
+    "\\src\\GoodHost.Web\\Views\\UserLog"
   ],
   "SelectedNode": "\\src\\GoodHost.sln",
   "PreviewInSolutionExplorer": false

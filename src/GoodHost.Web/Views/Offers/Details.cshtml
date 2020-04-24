@@ -1,0 +1,42 @@
+﻿@model Projekat_1.Models.Offer
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Offer</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Date)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Date)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Place)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Place.IdPlace)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Rent)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Rent.IdRent)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.UserRole)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.UserRole.IdURole)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.IdOffer">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

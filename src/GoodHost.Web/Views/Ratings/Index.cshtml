@@ -1,0 +1,65 @@
+﻿@model IEnumerable<Projekat_1.Models.Rating>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.HostRate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Communication)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Location)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Value)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Accuracy)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cleanliness)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.HostRate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Communication)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Location)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Value)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Accuracy)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cleanliness)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.IdRating">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.IdRating">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.IdRating">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

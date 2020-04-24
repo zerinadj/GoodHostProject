@@ -1560,3 +1560,5 @@ C:\Users\user\Source\Repos\zerinadj\GoodHostProject\src\GoodHost.Web\bin\System.
 C:\Users\user\Source\Repos\zerinadj\GoodHostProject\src\GoodHost.Web\bin\System.Text.Encodings.Web.xml
 C:\Users\user\Source\Repos\zerinadj\GoodHostProject\src\GoodHost.Web\bin\System.Threading.Tasks.Extensions.xml
 C:\Users\user\Source\Repos\zerinadj\GoodHostProject\src\GoodHost.Web\obj\Debug\GoodHost.Web.dll.config
+C:\Users\user\Source\Repos\zerinadj\GoodHostProject\src\GoodHost.Web\bin\WebMatrix.Data.dll
+C:\Users\user\Source\Repos\zerinadj\GoodHostProject\src\GoodHost.Web\bin\WebMatrix.Data.xml
