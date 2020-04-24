@@ -1,9 +1,12 @@
-﻿@{
+﻿
+@{
     Page.Title = "Title goes here";
     //Layout = "Your Layout Page goes here";
 }
+
 <center><h1>Welcome to your page!</h1></center>
 <div style="padding:40px;">
+    <a href="/Place/Create" asp-area="" asp-controller="Places" asp-action="Create">Add Place</a>
     <h2>Host your home</h2>
     <div style="display:flex; justify-content:center">
 
@@ -25,14 +28,14 @@
                 <br />
                 <br />
                 <h4>What will guests have?</h4>
-                <div>
-                    <input type="radio" name="space" value="eplace" />
-                    <label for="eplace">Entire place</label> <br />
-                    <input type="radio" name="space" value="proom" />
-                    <label for="proom">Private room</label><br />
-                    <input type="radio" name="space" value="sroom" />
-                    <label for="sroom">Shared room</label><br />
-                </div>
+
+                <input type="radio" name="space" id="eplace" value="eplace" />
+                <label for="eplace">Entire place</label> <br />
+                <input type="radio" id="proom" name="space" value="proom" />
+                <label for="proom">Private room</label><br />
+                <input type="radio" id="sroom" name="space" value="sroom" />
+                <label for="sroom">Shared room</label><br />
+
                 <br />
                 <br />
                 <h4>How many guests can your place accommodate?</h4>

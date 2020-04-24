@@ -47,8 +47,9 @@
   "spm": {
     "main": "Chart.js"
   },
-  "dependencies": {
-    "chartjs-color": "^2.1.0",
-    "moment": "^2.10.6"
-  }
+	"dependencies": {
+		"chartjs-color": "^2.1.0",
+		"moment": "^2.10.6",
+		"Microsoft.AspNet.Mvc.TagHelpers": "6.0.0-beta4"
+	}
 }
