@@ -19,7 +19,7 @@ namespace GoodHost.Api.Controllers
 {
     public class AccountController : AbpApiController
     {
-        public static OAuthBearerAuthenticationOptions OAuthBearerOptions { get; private set; }
+        public static OAuthBearerAuthenticationOptions OAuthBearerOptions { get; private set ;}
 
         private readonly LogInManager _logInManager;
 
