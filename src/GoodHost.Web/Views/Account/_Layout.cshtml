@@ -40,11 +40,6 @@
             <a href="javascript:void(0);">GoodHost</a>
         </div>
 
-        @if (ViewBag.IsMultiTenancyEnabled)
-        {
-            @Html.Action("TenantChange", "Account")
-        }
-
         @RenderBody()
 
         @Html.Action("_AccountLanguages", "Account")

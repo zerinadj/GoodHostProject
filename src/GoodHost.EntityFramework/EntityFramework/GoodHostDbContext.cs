@@ -8,6 +8,7 @@ using GoodHost.MultiTenancy;
 
 namespace GoodHost.EntityFramework
 {
+
     public class GoodHostDbContext : AbpZeroDbContext<Tenant, Role, User>
     {
         //TODO: Define an IDbSet for your Entities...

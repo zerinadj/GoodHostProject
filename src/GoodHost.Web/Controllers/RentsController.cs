@@ -5,10 +5,10 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using Projekat_1.Data;
-using Projekat_1.Models;
+using GoodHost.Data;
+using GoodHost.Models;
 
-namespace Projekat_1.Controllers
+namespace GoodHost.Web.Controllers
 {
     public class RentsController : Controller
     {

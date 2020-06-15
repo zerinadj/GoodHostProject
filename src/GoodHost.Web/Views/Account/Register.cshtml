@@ -7,6 +7,7 @@
 @section Scripts{
     <script type="text/javascript" src="~/Views/Account/Register.js"></script>
 }
+<body style="background-color:#7971ea;">
 <div class="card">
     <div class="body">
         <form id="RegisterForm" asp-action="Register" method="POST">
@@ -62,9 +63,10 @@
             <div class="row">
                 <div class="col-xs-12">
                     <a href="@Url.Action("Login", "Account")" cl class="btn btn-default waves-effect">@L("Back")</a>
-                    <button id="RegisterButton" class="btn bg-pink waves-effect" type="submit">@L("Register")</button>
+                    <button id="RegisterButton" class="btn bg-deep-purple waves-effect" type="submit">@L("Register")</button>
                 </div>
             </div>
         </form>
     </div>
 </div>
+</body>

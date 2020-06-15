@@ -2,7 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\src",
-    "\\src\\GoodHost.Web"
+    "\\src\\GoodHost.Web",
+    "\\src\\GoodHost.Web\\Controllers",
+    "\\src\\GoodHost.Web\\Models",
+    "\\src\\GoodHost.Web\\Models\\Users"
   ],
   "SelectedNode": "\\src\\GoodHost.sln",
   "PreviewInSolutionExplorer": false
