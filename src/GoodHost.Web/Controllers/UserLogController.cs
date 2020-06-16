@@ -8,8 +8,13 @@ namespace GoodHost.Web.Controllers
 {
     public class UserLogController : Controller
     {
-        // GET: UserLog
-        public ActionResult UsersHome()
+        // GET: Profile
+        public new ActionResult Profile()
+        {
+            return View();
+        }
+        //GET: CreateOffer
+        public ActionResult CreateOffer()
         {
             return View();
         }

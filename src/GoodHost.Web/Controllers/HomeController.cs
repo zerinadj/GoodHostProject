@@ -10,7 +10,7 @@ namespace GoodHost.Web.Controllers
         {
             if (User.IsInRole("User"))
             {
-                return RedirectToAction("UsersHome", "UserLog");
+                return RedirectToAction("Profile", "UserLog");
             }
             return View();
         }

@@ -839,6 +839,7 @@
     <Content Include="images\kuca4.jpg" />
     <Content Include="images\mapa.jpg" />
     <Content Include="images\naslovna.jpg" />
+    <Content Include="images\transplogo.ico" />
     <Content Include="images\user-img-background.jpg" />
     <Content Include="images\user.png" />
     <Content Include="js\admin.js" />
@@ -3393,7 +3394,7 @@
     </None>
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
-    <Content Include="Views\UserLog\UsersHome.cshtml" />
+    <Content Include="Views\UserLog\CreateOffer.cshtml" />
     <Content Include="Views\_ViewImports.cshtml" />
     <Content Include="Views\Start\Index.cshtml" />
     <Content Include="scss\bootstrap\.DS_Store" />
@@ -3496,6 +3497,7 @@
     <Content Include="Views\AllOffers\Index.cshtml" />
     <Content Include="Views\AllOffers\Edit.cshtml" />
     <Content Include="Views\AllOffers\_EditUserModal.cshtml" />
+    <Content Include="Views\UserLog\Profile.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
