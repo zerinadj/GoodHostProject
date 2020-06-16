@@ -60,7 +60,7 @@ namespace GoodHost.Web
                     new MenuItemDefinition(
                         PageNames.Offers,
                         L("Offers"),
-                        url: "AllOffers",
+                        url: "Start",
                         icon: "info"
                     )
                 ).AddItem(
