@@ -56,6 +56,21 @@ namespace GoodHost.Web
                         url: "About",
                         icon: "info"
                     )
+                ).AddItem(
+                    new MenuItemDefinition(
+                        PageNames.Offers,
+                        L("Offers"),
+                        url: "AllOffers",
+                        icon: "info"
+                    )
+                ).AddItem(
+                    new MenuItemDefinition(
+                        PageNames.Offers,
+                        L("My Offers"),
+                        url: "AllOffers/Edit",
+                        icon: "info"
+                    )
+
                 ).AddItem( //Menu items below is just for demonstration!
                     new MenuItemDefinition(
                         "MultiLevelMenu",

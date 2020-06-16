@@ -16,6 +16,7 @@ namespace GoodHost.Web.Models.Places
             {
                 SqlCommand cmd = new SqlCommand("sp_Place_Add", con);
                 cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@Id", places.Id);
                 cmd.Parameters.AddWithValue("@Name", places.Name);
                 cmd.Parameters.AddWithValue("@Kind", places.Kind);
                 cmd.Parameters.AddWithValue("@MaxNum", places.MaxOfGuests);

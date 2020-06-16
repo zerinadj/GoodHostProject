@@ -3211,6 +3211,7 @@
     </Content>
     <Content Include="Views\Account\_TenantChange.js" />
     <Content Include="Views\Account\_TenantChangeModal.js" />
+    <Content Include="Views\AllOffers\_EditUserModal.js" />
     <Content Include="Views\Home\Index.js" />
     <Content Include="Views\Roles\Index.js" />
     <Content Include="Views\Roles\_EditRoleModal.js" />
@@ -3236,6 +3237,7 @@
     <Compile Include="App_Start\Startup.cs" />
     <Compile Include="Controllers\AboutController.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\AllOffersController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\Results\ChallengeResult.cs" />
     <Compile Include="Controllers\RolesController.cs" />
@@ -3243,7 +3245,6 @@
     <Compile Include="Controllers\TenantsController.cs" />
     <Compile Include="Controllers\UserLogController.cs" />
     <Compile Include="Controllers\UsersController.cs" />
-    <Compile Include="Controllers\PlacesController.cs" />
     <Compile Include="Helpers\HtmlHelpers.cs" />
     <Compile Include="Models\Account\TenantChangeModalViewModel.cs" />
     <Compile Include="Models\Account\TenantChangeViewModel.cs" />
@@ -3393,8 +3394,6 @@
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
     <Content Include="Views\UserLog\UsersHome.cshtml" />
-    <Content Include="Views\Place\Create.cshtml" />
-    <Content Include="Views\Place\_ViewStart.cshtml" />
     <Content Include="Views\_ViewImports.cshtml" />
     <Content Include="Views\Start\Index.cshtml" />
     <Content Include="scss\bootstrap\.DS_Store" />
@@ -3494,6 +3493,9 @@
     <Content Include="Scripts\popper.js.map" />
     <Content Include="Scripts\popper-utils.min.js.map" />
     <Content Include="Scripts\popper-utils.js.map" />
+    <Content Include="Views\AllOffers\Index.cshtml" />
+    <Content Include="Views\AllOffers\Edit.cshtml" />
+    <Content Include="Views\AllOffers\_EditUserModal.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

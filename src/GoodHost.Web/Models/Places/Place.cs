@@ -8,6 +8,8 @@ namespace GoodHost.Web.Models.Places
 {
     public class Place
     {
+        [Key]
+        public string Id { get; set; }
         [Required]
         public string Name { get; set; }
         [Required]
